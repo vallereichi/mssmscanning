@@ -3,6 +3,7 @@ import random
 import typing
 from collections.abc import Callable
 import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation, PillowWriter
 
 """
 global constants
@@ -31,12 +32,9 @@ obj_gaussian: Callable[[list[float], float, float], float] = gaussian
 
 
 def parabolic(
-        point: list[float],
+        point: list[float]
     
     ) -> float:
-
-    if len(point) != 2:
-        raise Exception("this objective function can only take two-dimensional inputs")
 
     return point[0]**2 + point[1]**2
 obj_parabolic: Callable[[list[float]], float] = parabolic
@@ -104,7 +102,7 @@ def diver(
         improvement = abs(trial_lh - target_lh)
         improvement_list.append(improvement)
 
-        print("current population:", len(population_list), "   improvement =", improvement)
+        
 
         
         # break condition
@@ -123,15 +121,51 @@ def diver(
 
 
 if __name__ == "__main__":
-    populations, improvements = diver(population_size, ranges, mutation_scale_factor, crossover_rate, obj_gaussian)
+    populations, improvements = diver(population_size, ranges, mutation_scale_factor, crossover_rate, obj_parabolic)
 
     # create animation
     if len(ranges) != 2:
         raise Exception("can only create animation for two dimensional objective functions")
+    
+    metadata = dict(title="rand/1/bin", artist="Valentin Reichenspurner")
+    writer = PillowWriter(fps=15, metadata=metadata)
+    
+    def parabolic_mesh(x: float, y:float) -> float:
+        return x**2 + y**2
 
-    y = list(np.linspace(ranges[1][0], ranges[1][1], 10000))
-    x = list(np.linspace(ranges[0][0], ranges[0][1], 10000))
-    z = [parabolic(point) for point in list(zip(x,y))] 
+    y = list(np.linspace(ranges[1][0], ranges[1][1], 100))
+    x = list(np.linspace(ranges[0][0], ranges[0][1], 100))
+    X,Y = np.meshgrid(x,y)
+
+    z = parabolic_mesh(X,Y)
+
+    fig = plt.figure(figsize=(10,5))
+    ax1 = fig.add_subplot(121, projection='3d')
+    ax1.plot_surface(X,Y,z, cmap='plasma')
+    ax1.set_axis_off()
+
+
+    ax2 = fig.add_subplot(122)
+    contour = ax2.contour(X,Y,z, levels=50)
+    ax2.set_xlabel("x")
+    ax2.set_ylabel("y")
+    ax2.set_xlim(ranges[0][0], ranges[0][1])
+    ax2.set_ylim(ranges[1][0], ranges[1][1])
+    ax2.set_aspect('equal', adjustable='box')
+    fig.colorbar(contour, label="p(x,y)")
+
+    scatter = ax2.scatter([], [], color='magenta', alpha=1, marker='.')
+
+    with writer.saving(fig, 'diver_animation.gif', 100):
+
+        for frame in populations:
+            scatter.set_offsets(frame)
+            writer.grab_frame()
+
+
+
+    #fig.tight_layout()
+    #fig.savefig("test_img.png")
     
 
 

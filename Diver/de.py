@@ -39,6 +39,24 @@ def parabolic(
     return point[0]**2 + point[1]**2
 obj_parabolic: Callable[[list[float]], float] = parabolic
 
+def two_valleys(point: list[float]) -> float:
+    x = point[0]
+    y = point[1]
+    valley1 = 5 * np.exp(-((x - 20)**2 + (y - 2)**2)/100)
+    valley2 = 10 * np.exp(-((x + 20)**2 + (y + 2)**2)/300)
+
+    return -valley1 - valley2 + 100
+
+def four_valleys(point: list[float]) -> float:
+    x = point[0]
+    y = point[1]
+    valley1 = np.exp(-((x - 20)**2 + (y - 20)**2)/200)
+    valley2 = np.exp(-((x + 20)**2 + (y - 20)**2)/200)
+    valley3 = np.exp(-((x - 20)**2 + (y + 20)**2)/200)
+    valley4 = np.exp(-((x + 20)**2 + (y + 20)**2)/200)
+    return -valley1 - valley2 - valley3 - valley4 + 1000
+
+
 
 
 """
@@ -93,16 +111,19 @@ def diver(
 
         if abs(target_lh) < abs(trial_lh):
             current_population[target_vector_id] = target_vector
+            improvement = 0
+            
         if abs(target_lh) > abs(trial_lh):
             current_population[target_vector_id] = trial_vector
+            improvement = abs(trial_lh - target_lh)
+            
+
 
         new_population = current_population.copy()
-
         population_list.append(new_population)
-        improvement = abs(trial_lh - target_lh)
         improvement_list.append(improvement)
 
-        
+        print("population: ", len(population_list), "       improvement =", improvement)
 
         
         # break condition

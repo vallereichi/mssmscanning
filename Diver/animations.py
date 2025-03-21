@@ -3,23 +3,24 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import PillowWriter
 from collections.abc import Callable
 
-from de import diver, parabolic
+from de import diver, parabolic, two_valleys, four_valleys
 
 
 """
 global constants
 """
-NP = 10
-F = 0.5
-Cr = 0.5
+NP = 50
+F = 0.7
+Cr = 0.7
 ranges = [(-50,50)]*2
 
 conv_thresh = 1e-5
 MAX_ITER = 10000
 
-obj_func = parabolic
+obj_func = four_valleys
 
-animation_name = "parabolic"
+animation_name = "four_valleys"
+cont_levels = 10
 
 
 """
@@ -57,7 +58,7 @@ def animate() -> None:
     ax1.set_axis_off()
 
     # add contours for ax2
-    contour = ax2.contour(X,Y,Z, levels=50)
+    contour = ax2.contour(X,Y,Z, levels=cont_levels)
     ax2.set_xlabel("x")
     ax2.set_ylabel("y")
     ax2.set_xlim(ranges[0][0], ranges[0][1])
@@ -66,7 +67,7 @@ def animate() -> None:
     fig.colorbar(contour, label="p(x,y)")
 
     # create empty scatter plot
-    scatter = ax2.scatter([], [], marker='.', color='magenta')
+    scatter = ax2.scatter([], [], marker='.', color='magenta', alpha=0.8, zorder=100)
 
     # select animation frames and write gif
     with writer.saving(fig, './animations/' + animation_name + '.gif', dpi=100):

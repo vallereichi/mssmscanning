@@ -1,0 +1,69 @@
+PROCESS: Z->2*x
+PROCESS: ~o1,~o1->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: QUARKS,~o1->QUARKS,~o1{u,U,d,D,s,S,c,C,t,T,b,B,~g,~uL,~UL,~uR,~UR,~dL,~DL,~dR,~DR,~cL,~CL,~cR,~CR,~sL,~SL,~sR,~SR,~t1,~T1,~t2,~T2,~b1,~B1,~b2,~B2
+Delete diagrams with _S0_!=1,_V5_
+PROCESS: QUARKS,~o1->QUARKS,~o1{u,U,d,D,s,S
+Delete diagrams with _V5_!=1,_S0_
+
+========= SLHA file input =========
+Initial file  "scan/SPheno/0.slha"
+Warnings from spectrum calculator:
+ .....none
+
+Dark matter candidate is '~o1' with spin=1/2  mass=2.01E+02
+
+~o1 = 0.999*bino -0.000*wino +0.032*higgsino1 -0.005*higgsino2
+
+
+==== Physical Constraints: =====
+deltartho	2.28E-06
+gmuon	5.10E-10
+bsgnlo	3.33E-04 ( SM 3.28E-04 )
+bsmumu	2.99E-09
+btaunu	9.77E-01
+dtaunu	5.17E-02  dmunu	5.33E-03
+Rl23	9.999E-01
+WARNING: there is no Higgs particle with a mass between 123-128GeV
+
+ SPheno  low energy observables
+  BR(b -> s gamma)                         3.254E-04 
+  BR(b -> s mu+ mu-)                       1.590E-06 
+  BR(b -> s nu nu)                         3.533E-05 
+  BR(Bd -> e+ e-)                          2.158E-15 
+  BR(Bd -> mu+ mu-)                        9.219E-11 
+  BR(Bd -> tau+ tau-)                      1.930E-08 
+  BR(Bs -> e+ e-)                          7.254E-14 
+  BR(Bs -> mu+ mu-)                        3.099E-09 
+  BR(Bs -> tau+ tau-)                      6.574E-07 
+  BR(B_u -> tau nu)                        9.548E-05 
+  BR(B_u -> tau nu)/BR(B_u -> tau nu)_SM   9.863E-01 
+  |Delta(M_Bd)| [ps^-1]                    5.412E-01 
+  |Delta(M_Bs)| [ps^-1]                    1.934E+01 
+  epsilon_K                                2.156E-03 
+  Delta(M_K)                               2.282E-15 
+  BR(K^0 -> pi^0 nu nu)                    2.485E-11 
+  BR(K^+ -> pi^+ nu nu)                    8.303E-11 
+  Delta(g-2)_electron/2                    1.020E-14 
+  Delta(g-2)_muon/2                        4.362E-10 
+  Delta(g-2)_tau/2                         3.515E-08 
+
+==== Calculation of relic density =====
+Xf	2.00e+01 Omega	1.57e+01
+# Channels which contribute to 1/(omega) more than 1%.
+# Relative contributions in % are displayed
+   34% ~o1 ~o1 ->m M 
+   34% ~o1 ~o1 ->e E 
+   12% ~o1 ~o1 ->nm Nm 
+   12% ~o1 ~o1 ->ne Ne 
+    3% ~o1 ~o1 ->t T 
+    2% ~o1 ~o1 ->l L 
+
+==== Calculation of CDM-nucleons amplitudes  =====
+~o1-nucleon micrOMEGAs amplitudes:
+proton:  SI  -1.187E-10  SD  -5.097E-09
+neutron: SI  -1.215E-10  SD  4.804E-09
+
+==== ~o1-nucleon cross sections[pb] ====
+ proton  SI 6.102E-12  SD 3.376E-08
+ neutron SI 6.389E-12  SD 2.999E-08
+Not excluded by DD experiments  at 90% level 

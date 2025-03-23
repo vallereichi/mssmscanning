@@ -1,0 +1,79 @@
+
+========= SLHA file input =========
+Initial file  "scan/SPheno/2.slha"
+Warnings from spectrum calculator:
+ .....none
+
+Dark matter candidate is '~o1' with spin=1/2  mass=8.39E+01
+
+~o1 = 0.002*bino -0.984*wino +0.176*higgsino1 +0.020*higgsino2
+
+
+==== Physical Constraints: =====
+deltartho	1.69E-06
+gmuon	-2.75E-10
+bsgnlo	3.36E-04 ( SM 3.28E-04 )
+bsmumu	3.05E-09
+btaunu	9.97E-01
+dtaunu	5.17E-02  dmunu	5.33E-03
+Rl23	1.000E+00
+WARNING: Chargino below LEP limit 
+WARNING: there is no Higgs particle with a mass between 123-128GeV
+
+ SPheno  low energy observables
+  BR(b -> s gamma)                         3.270E-04 
+  BR(b -> s mu+ mu-)                       1.590E-06 
+  BR(b -> s nu nu)                         3.533E-05 
+  BR(Bd -> e+ e-)                          2.156E-15 
+  BR(Bd -> mu+ mu-)                        9.208E-11 
+  BR(Bd -> tau+ tau-)                      1.928E-08 
+  BR(Bs -> e+ e-)                          7.263E-14 
+  BR(Bs -> mu+ mu-)                        3.103E-09 
+  BR(Bs -> tau+ tau-)                      6.581E-07 
+  BR(B_u -> tau nu)                        9.662E-05 
+  BR(B_u -> tau nu)/BR(B_u -> tau nu)_SM   9.981E-01 
+  |Delta(M_Bd)| [ps^-1]                    5.413E-01 
+  |Delta(M_Bs)| [ps^-1]                    1.934E+01 
+  epsilon_K                                2.156E-03 
+  Delta(M_K)                               2.282E-15 
+  BR(K^0 -> pi^0 nu nu)                    2.485E-11 
+  BR(K^+ -> pi^+ nu nu)                    8.302E-11 
+  Delta(g-2)_electron/2                    -3.035E-15 
+  Delta(g-2)_muon/2                        -1.298E-10 
+  Delta(g-2)_tau/2                         -1.294E-08 
+
+==== Calculation of relic density =====
+Xf	3.14e+01 Omega	2.12e-04
+# Channels which contribute to 1/(omega) more than 1%.
+# Relative contributions in % are displayed
+   21% ~1+ ~o1 ->u D 
+   21% ~1+ ~o1 ->S c 
+    7% ~1+ ~o1 ->nl L 
+    7% ~1+ ~o1 ->ne E 
+    7% ~1+ ~o1 ->nm M 
+    4% ~1+ ~1- ->d D 
+    4% ~1+ ~1- ->s S 
+    4% ~1+ ~1- ->b B 
+    4% ~1+ ~1- ->u U 
+    4% ~1+ ~1- ->c C 
+    2% ~o1 ~o1 ->W+ W- 
+    2% ~1+ ~1- ->A Z 
+    2% ~1+ ~o1 ->A W+ 
+    2% ~1+ ~1- ->nl Nl 
+    2% ~1+ ~1- ->ne Ne 
+    2% ~1+ ~1- ->nm Nm 
+    1% ~1+ ~1+ ->W+ W+ 
+    1% ~1+ ~1- ->l L 
+    1% ~1+ ~1- ->e E 
+    1% ~1+ ~1- ->m M 
+    1% ~1+ ~1- ->W+ W- 
+
+==== Calculation of CDM-nucleons amplitudes  =====
+~o1-nucleon micrOMEGAs amplitudes:
+proton:  SI  7.137E-11  SD  -1.737E-07
+neutron: SI  6.634E-11  SD  1.528E-07
+
+==== ~o1-nucleon cross sections[pb] ====
+ proton  SI 2.178E-12  SD 3.871E-05
+ neutron SI 1.882E-12  SD 2.996E-05
+ 97.74%  excuded by XENON1T_2018 

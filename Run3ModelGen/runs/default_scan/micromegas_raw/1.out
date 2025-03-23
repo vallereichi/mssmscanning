@@ -1,0 +1,154 @@
+PROCESS: ~nm,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~nm,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~ne,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~ne,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~ne,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~ne,~Ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mL,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mL,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: W+->2*x
+PROCESS: ~mL,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mL,~Ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mL,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mL,~ML->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~Ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~ML->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~eL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~EL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o1,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o1,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o1,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o1,~eL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~Ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~ML->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~eL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~EL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o2,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o2,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o2,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o2,~eL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mL,~mR->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mL,~MR->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~mR->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~MR->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~eR->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eL,~ER->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mR,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mR,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mR,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~mR,~Ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eR,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eR,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eR,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eR,~Ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eR,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~eR,~ML->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~o1->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~1+->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~1+,~1-->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o3,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o3,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o3,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o3,~eL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~Nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~Ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~ML->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~eL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~2+,~EL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o4,~nm->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o4,~ne->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o4,~mL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: ~o4,~eL->AllEven,1*x{A,Z,W+,W-,G,ne,Ne,e,E,nm,Nm,m,M,nl,Nl,l,L,u,U,d,D,s,S,c,C,t,T,b,B,h,H,H3,H+,H-
+PROCESS: QUARKS,~nm->QUARKS,~nm{u,U,d,D,s,S,c,C,t,T,b,B,~g,~uL,~UL,~uR,~UR,~dL,~DL,~dR,~DR,~cL,~CL,~cR,~CR,~sL,~SL,~sR,~SR,~t1,~T1,~t2,~T2,~b1,~B1,~b2,~B2
+Delete diagrams with _S0_!=1,_V5_
+
+========= SLHA file input =========
+Initial file  "scan/SPheno/1.slha"
+Warnings from spectrum calculator:
+ .....none
+
+Dark matter candidate is '~nm' with spin=0/2  mass=6.02E+02
+ ~o1 is not CDM
+
+
+==== Physical Constraints: =====
+deltartho	4.66E-06
+gmuon	4.19E-10
+bsgnlo	3.32E-04 ( SM 3.28E-04 )
+bsmumu	3.07E-09
+btaunu	9.96E-01
+dtaunu	5.17E-02  dmunu	5.33E-03
+Rl23	1.000E+00
+MassLimits OK
+
+ SPheno  low energy observables
+  BR(b -> s gamma)                         3.246E-04 
+  BR(b -> s mu+ mu-)                       1.590E-06 
+  BR(b -> s nu nu)                         3.534E-05 
+  BR(Bd -> e+ e-)                          2.153E-15 
+  BR(Bd -> mu+ mu-)                        9.196E-11 
+  BR(Bd -> tau+ tau-)                      1.927E-08 
+  BR(Bs -> e+ e-)                          7.250E-14 
+  BR(Bs -> mu+ mu-)                        3.097E-09 
+  BR(Bs -> tau+ tau-)                      6.575E-07 
+  BR(B_u -> tau nu)                        9.653E-05 
+  BR(B_u -> tau nu)/BR(B_u -> tau nu)_SM   9.971E-01 
+  |Delta(M_Bd)| [ps^-1]                    5.412E-01 
+  |Delta(M_Bs)| [ps^-1]                    1.934E+01 
+  epsilon_K                                2.156E-03 
+  Delta(M_K)                               2.282E-15 
+  BR(K^0 -> pi^0 nu nu)                    2.486E-11 
+  BR(K^+ -> pi^+ nu nu)                    8.305E-11 
+  Delta(g-2)_electron/2                    7.154E-15 
+  Delta(g-2)_muon/2                        3.059E-10 
+  Delta(g-2)_tau/2                         1.974E-08 
+
+==== Calculation of relic density =====
+Xf	2.70e+01 Omega	8.85e-02
+# Channels which contribute to 1/(omega) more than 1%.
+# Relative contributions in % are displayed
+    9% ~mL ~ne ->e nm 
+    9% ~eL ~nm ->ne m 
+    8% ~ne ~nm ->ne nm 
+    8% ~nm ~nm ->nm nm 
+    8% ~ne ~ne ->ne ne 
+    6% ~nm ~Nm ->W+ W- 
+    6% ~ne ~Ne ->W+ W- 
+    5% ~nm ~Nm ->Z Z 
+    5% ~ne ~Ne ->Z Z 
+    4% ~mL ~nm ->nm m 
+    4% ~eL ~ne ->ne e 
+    2% ~eL ~mL ->e m 
+    2% ~mL ~mL ->m m 
+    2% ~eL ~eL ->e e 
+    2% ~mL ~Nm ->A W- 
+    2% ~eL ~Ne ->A W- 
+    2% ~mL ~Nm ->Z W- 
+    2% ~eL ~Ne ->Z W- 
+    2% ~mL ~ML ->W+ W- 
+    2% ~eL ~EL ->W+ W- 
+    1% ~mL ~Nm ->W- h 
+    1% ~eL ~Ne ->W- h 
+    1% ~mL ~ne ->ne m 
+    1% ~eL ~nm ->e nm 
+
+==== Calculation of CDM-nucleons amplitudes  =====
+~nm-nucleon micrOMEGAs amplitudes:
+proton:  SI  -3.951E-07  SD  0.000E+00
+neutron: SI  4.184E-06  SD  0.000E+00
+
+==== ~nm-nucleon cross sections[pb] ====
+ proton  SI 6.801E-05  SD 0.000E+00
+ neutron SI 7.628E-03  SD 0.000E+00
+ 100.00%  excuded by XENON1T_2018 

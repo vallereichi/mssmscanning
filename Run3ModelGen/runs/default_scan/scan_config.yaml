@@ -1,0 +1,34 @@
+config_file: null
+isGMSB: false
+num_models: 3
+parameters:
+  AT: [-8000, 8000]
+  Ab: [-2000, 2000]
+  Atau: [-2000, 2000]
+  M_1: [-2000, 2000]
+  M_2: [-2000, 2000]
+  M_3: [4000, 4000]
+  mA: [2000, 2000]
+  mbR: [4000, 4000]
+  mdR: [4000, 4000]
+  meL: [0, 2000]
+  meR: [0, 2000]
+  mqL1: [4000, 4000]
+  mqL3: [4000, 4000]
+  mtR: [4000, 4000]
+  mtauL: [2000, 2000]
+  mtauR: [2000, 2000]
+  mu: [-2000, 2000]
+  muR: [4000, 4000]
+  tanb: [1, 60]
+prior: flat
+rawfilen: /afs/ipp-garching.mpg.de/home/v/vreich/Run3ModelGen/source/Run3ModelGen/data/raw.slha
+scan_dir: scan
+seed: 123
+steps:
+- {name: prep_input, output_dir: input, prefix: IN}
+- {input_dir: input, log_dir: SPheno_log, name: SPheno, output_dir: SPheno, prefix: SP}
+- {input_dir: input, name: softsusy, output_dir: softsusy, prefix: SS}
+- {input_dir: SPheno, name: micromegas, output_dir: micromegas, prefix: MO}
+- {input_dir: SPheno, name: superiso, output_dir: superiso, prefix: SI}
+- {input_dir: SPheno, name: gm2calc, output_dir: gm2calc, prefix: GM2}

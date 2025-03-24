@@ -1,0 +1,463 @@
+(Mon Mar 24 15:52:43 2025)(-8.81882 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+None of the library symbols (__inputoutput_MOD_l_rp_pythia, inputoutput_mp_l_rp_pythia_) was found.
+The backend function from this symbol will be disabled (i.e. get status = -2)
+
+Raised at: line 168 in function void Gambit::set_backend_functor_status_C_CXX_Fortran(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:43 2025)(-8.81731 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+None of the library symbols (__inputoutput_MOD_io_rp, inputoutput_mp_io_rp_) was found.
+The backend function from this symbol will be disabled (i.e. get status = -2)
+
+Raised at: line 168 in function void Gambit::set_backend_functor_status_C_CXX_Fortran(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:43 2025)(-8.81653 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+None of the library symbols (__inputoutput_MOD_madgraph_style, inputoutput_mp_madgraph_style_) was found.
+The backend function from this symbol will be disabled (i.e. get status = -2)
+
+Raised at: line 168 in function void Gambit::set_backend_functor_status_C_CXX_Fortran(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:43 2025)(-8.81573 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+None of the library symbols (__inputoutput_MOD_lwrite_lhc_observables, inputoutput_mp_lwrite_lhc_observables_) was found.
+The backend function from this symbol will be disabled (i.e. get status = -2)
+
+Raised at: line 168 in function void Gambit::set_backend_functor_status_C_CXX_Fortran(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:43 2025)(-8.75118 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/feynhiggs/2.11.2/lib/libFH.so due to: 
+/work/gambit/Backends/installed/feynhiggs/2.11.2/lib/libFH.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:43 2025)(-8.71273 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/ddcalc/2.0.0/lib/libDDCalc.so due to: 
+/work/gambit/Backends/installed/ddcalc/2.0.0/lib/libDDCalc.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:44 2025)(-7.80083 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/classy/2.9.4/lib/classy_2_9_4.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:44 2025)(-7.78353 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/ddcalc/1.0.0/lib/libDDCalc.so due to: 
+/work/gambit/Backends/installed/ddcalc/1.0.0/lib/libDDCalc.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:44 2025)(-7.74171 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/darksusy/6.2.5/lib/libds_core_generic_wimp.so due to: 
+/work/gambit/Backends/installed/darksusy/6.2.5/lib/libds_core_generic_wimp.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:44 2025)(-7.55048 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/spheno/3.3.8/lib/libSPheno.so due to: 
+/work/gambit/Backends/installed/spheno/3.3.8/lib/libSPheno.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:44 2025)(-7.38902 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/nulike/1.0.8/lib/libnulike.so due to: 
+/work/gambit/Backends/installed/nulike/1.0.8/lib/libnulike.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:44 2025)(-7.12429 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/darksusy/5.1.3/lib/libdarksusy.so due to: 
+/work/gambit/Backends/installed/darksusy/5.1.3/lib/libdarksusy.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.96875 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/capgen/2.1/gencaplib.so due to: 
+/work/gambit/Backends/installed/capgen/2.1/gencaplib.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.95174 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/darksusy/6.1.1/lib/libds_core_generic_wimp.so due to: 
+/work/gambit/Backends/installed/darksusy/6.1.1/lib/libds_core_generic_wimp.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.93485 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Backend requires Mathematica and WSTP, but one of them is not found in the system. Please install/buy Mathematica and/or WSTP before using this backend.
+
+Raised at: line 336 in function int Gambit::Backends::backend_info::loadLibrary(const str&, const str&, const str&, bool, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.93282 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol MHiggs will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.93198 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol \[CapitalDelta]MHiggs will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.93114 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol SetSMparameters will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.90021 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/classy/2.6.3/lib/classy_2_6_3.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.88268 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/nulike/1.0.5/lib/libnulike.so due to: 
+/work/gambit/Backends/installed/nulike/1.0.5/lib/libnulike.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.86524 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+None of the library symbols (dsrdcom_) was found.
+The backend function from this symbol will be disabled (i.e. get status = -2)
+
+Raised at: line 168 in function void Gambit::set_backend_functor_status_C_CXX_Fortran(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.8505 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+None of the library symbols (dsgive_model_SLHA_) was found.
+The backend function from this symbol will be disabled (i.e. get status = -2)
+
+Raised at: line 168 in function void Gambit::set_backend_functor_status_C_CXX_Fortran(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.8135 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/nulike/1.0.6/lib/libnulike.so due to: 
+/work/gambit/Backends/installed/nulike/1.0.6/lib/libnulike.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.74422 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Backend requires Mathematica and WSTP, but one of them is not found in the system. Please install/buy Mathematica and/or WSTP before using this backend.
+
+Raised at: line 336 in function int Gambit::Backends::backend_info::loadLibrary(const str&, const str&, const str&, bool, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.74261 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol CalculateSquare will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.7407 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol CalculateSum will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73988 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol PrintVar will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73905 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol PrintVarorVar2 will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73825 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol VarEqualVar2 will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73743 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol StringTest will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73664 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol VoidTest will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73577 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol ExtractElement will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73492 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol SquareList will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73409 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol \[CapitalGamma]func will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73312 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol Var will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.7323 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol Var2 will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73148 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol \[Delta]var will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.73078 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Mathematica is not found or it is disabled. 
+The backend function for the symbol no_symbol will be disabled  (i.e. get status = -5)
+
+Raised at: line 274 in function int Gambit::set_backend_functor_status(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.67444 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/nulike/1.0.7/lib/libnulike.so due to: 
+/work/gambit/Backends/installed/nulike/1.0.7/lib/libnulike.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.66973 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/gamlike/1.0.0/lib/gamLike.so due to: 
+/work/gambit/Backends/installed/gamlike/1.0.0/lib/gamLike.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.65864 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Could not find path for backend salami v0.1.0
+in /work/gambit/config/backend_locations.yaml.default.
+Setting path to "no path in config/backend_locations.yaml.default".
+Raised at: line 174 in function Gambit::str Gambit::Backends::backend_info::path(Gambit::str, Gambit::str) const of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.65863 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/no path in config/backend_locations.yaml.default
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.65537 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/montepythonlike/3.3.0/montepython/MontePythonLike_3_3_0.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.64956 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/gm2calc/1.2.0/src/libgm2calc.so due to: 
+/work/gambit/Backends/installed/gm2calc/1.2.0/src/libgm2calc.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.64073 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/examples/simple_xs/1.0/simple_xs.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.62849 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/no path in config/backend_locations.yaml.default
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.62503 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/higgsbounds/4.2.1/lib/libhiggsbounds.so due to: 
+/work/gambit/Backends/installed/higgsbounds/4.2.1/lib/libhiggsbounds.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.61547 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/classy/exo_2.7.2/lib/classy_exo_2_7_2.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.5978 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/ddcalc/2.2.0/lib/libDDCalc.so due to: 
+/work/gambit/Backends/installed/ddcalc/2.2.0/lib/libDDCalc.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.51307 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/classy/2.9.3/lib/classy_2_9_3.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.4959 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend LibSecond 1.0.
+GAMBIT was configured with Python 3 but this backend needs Python 2.
+
+Raised at: line 585 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.49031 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/calchep/3.6.27/lib/libcalchep.so due to: 
+/work/gambit/Backends/installed/calchep/3.6.27/lib/libcalchep.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.46752 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+None of the library symbols (dsrdcom_) was found.
+The backend function from this symbol will be disabled (i.e. get status = -2)
+
+Raised at: line 168 in function void Gambit::set_backend_functor_status_C_CXX_Fortran(Gambit::functor&, const std::vector<std::__cxx11::basic_string<char> >&) of /work/gambit/Backends/src/ini_functions.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.4537 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/darksusy/6.2.5/lib/libds_core_mssm.so due to: 
+/work/gambit/Backends/installed/darksusy/6.2.5/lib/libds_core_mssm.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.40038 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/feynhiggs/2.12.0/lib/libFH.so due to: 
+/work/gambit/Backends/installed/feynhiggs/2.12.0/lib/libFH.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.384 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/darksusy/6.1.1/lib/libds_core_mssm.so due to: 
+/work/gambit/Backends/installed/darksusy/6.1.1/lib/libds_core_mssm.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.29182 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend LibThird 1.0.
+GAMBIT was configured with Python 3 but this backend needs Python 2.
+
+Raised at: line 585 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.28458 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/pbarlike/1.0/pbarlike-gambit-interface.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.26168 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/ddcalc/2.1.0/lib/libDDCalc.so due to: 
+/work/gambit/Backends/installed/ddcalc/2.1.0/lib/libDDCalc.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:45 2025)(-6.21529 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/feynhiggs/2.11.3/lib/libFH.so due to: 
+/work/gambit/Backends/installed/feynhiggs/2.11.3/lib/libFH.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:47 2025)(-4.16668 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/ddcalc/1.1.0/lib/libDDCalc.so due to: 
+/work/gambit/Backends/installed/ddcalc/1.1.0/lib/libDDCalc.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:47 2025)(-4.13146 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/nulike/1.0.4/lib/libnulike.so due to: 
+/work/gambit/Backends/installed/nulike/1.0.4/lib/libnulike.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:47 2025)(-4.12693 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/classy/3.1.0/lib/classy_3_1_0.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:48 2025)(-4.10862 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/darksusy/6.2.2/lib/libds_core_generic_wimp.so due to: 
+/work/gambit/Backends/installed/darksusy/6.2.2/lib/libds_core_generic_wimp.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:48 2025)(-4.09178 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/ddcalc/1.2.0/lib/libDDCalc.so due to: 
+/work/gambit/Backends/installed/ddcalc/1.2.0/lib/libDDCalc.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:48 2025)(-4.05438 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/Backends/installed/darksusy/6.2.2/lib/libds_core_mssm.so due to: 
+/work/gambit/Backends/installed/darksusy/6.2.2/lib/libds_core_mssm.so: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:48 2025)(-4.00026 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading library from /work/gambit/no path in config/backend_locations.yaml.default due to: 
+/work/gambit/no path in config/backend_locations.yaml.default: cannot open shared object file: No such file or directory
+All functions in this backend library will be disabled (i.e. given status = -1).
+Raised at: line 458 in function void Gambit::Backends::backend_info::loadLibrary_C_CXX_Fortran(const str&, const str&, const str&, bool) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Mon Mar 24 15:52:48 2025)(-3.99281 [s])[Default,Backends][Warning][Non-fatal]:
+WARNING: A problem has been raised by the backend system.
+Failed loading Python backend; source file not found at /work/gambit/Backends/installed/contur/2.1.1/contur/init_by_GAMBIT.py
+
+Raised at: line 568 in function void Gambit::Backends::backend_info::loadLibrary_Python(const str&, const str&, const str&, const str&) of /work/gambit/Backends/src/backend_info.cpp.
+--<>--<>--<>--<>--<>--<>--<>--

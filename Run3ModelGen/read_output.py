@@ -13,7 +13,7 @@ if not os.path.isdir(path_to_plots): os.makedirs(path_to_plots)
 
 prefix: list[str] = ["SS", "SP", "MO", "SI", "GM2"]
 
-plt_colors: list[str] = ['mediumorchid', 'lightseagreen'] 
+plt_colors: list[str] = ['mediumorchid', 'lightseagreen', 'crimson'] 
 
 
 parameter: str = "m_h"                                                              # try to find this in data

@@ -1,0 +1,34 @@
+config_file: ../config_files/ATLASrun2.yaml
+isGMSB: false
+num_models: 100
+parameters:
+  AT: [-8000, 8000]
+  Ab: [-2000, 2000]
+  Atau: [-2000, 2000]
+  M_1: [-2000, 2000]
+  M_2: [-2000, 2000]
+  M_3: [1000, 5000]
+  mA: [0, 5000]
+  mbR: [2000, 5000]
+  mdR: [2000, 5000]
+  meL: [10000, 10000]
+  meR: [10000, 10000]
+  mqL1: [10000, 10000]
+  mqL3: [2000, 5000]
+  mtR: [2000, 5000]
+  mtauL: [10000, 10000]
+  mtauR: [10000, 10000]
+  mu: [-2000, 2000]
+  muR: [2000, 5000]
+  tanb: [1, 60]
+prior: flat
+rawfilen: /afs/ipp-garching.mpg.de/home/v/vreich/Run3ModelGen/source/Run3ModelGen/data/raw.slha
+scan_dir: scan
+seed: 123
+steps:
+- {name: prep_input, output_dir: input, prefix: IN}
+- {input_dir: input, log_dir: SPheno_log, name: SPheno, output_dir: SPheno, prefix: SP}
+- {input_dir: input, name: softsusy, output_dir: softsusy, prefix: SS}
+- {input_dir: SPheno, name: micromegas, output_dir: micromegas, prefix: MO}
+- {input_dir: SPheno, name: superiso, output_dir: superiso, prefix: SI}
+- {input_dir: SPheno, name: gm2calc, output_dir: gm2calc, prefix: GM2}

@@ -1,0 +1,302 @@
+(Tue Mar 25 15:28:14 2025)(-10.0665 [s])[Default,Backends][Debug]:
+Custom user backend location file /work/gambit/config/backend_locations.yaml could not be read; employing default only.
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:14 2025)(-10.0608 [s])[Default,Backends][Debug]:
+Successfully loaded default backend location file /work/gambit/config/backend_locations.yaml.default.
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:15 2025)(-9.18357 [s])[Default,Backends][Debug]:
+Python interpreter successfully started.
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:25 2025)(1.30435 [s])[Default,Logger][Debug]:
+  log_debug_messages = true; log messages tagged as 'Debug' WILL be logged. 
+WARNING: This may lead to very large log files!
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:25 2025)(1.30505 [s])[Default,Logger][Debug]:
+
+Creating logger for tags [Debug, ]; output is "runs/MSSM/logs//debug.log"
+Creating logger for tags [Default, ]; output is "runs/MSSM/logs//default.log"
+Creating logger for tags [Error, ]; output is "runs/MSSM/logs//errors.log"
+Creating logger for tags [Warning, ]; output is "runs/MSSM/logs//warnings.log"
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04016 [s])[Default,Core][Debug]:
+Entered Likelihood_Container::main
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04073 [s])[Default,Core][Debug]:
+Number of target vertices to calculate:    5
+Number of auxiliary vertices to calculate: 2
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04083 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04086 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.0409 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling lnL_Z_mass from PrecisionBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04106 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04109 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04111 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling lnL_t_mass from PrecisionBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04123 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from MSSM7atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04125 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04128 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04131 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM9atQ_parameters from MSSM7atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04136 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM10atQ_parameters from MSSM9atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.0414 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM11atQ_parameters from MSSM10atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04144 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM16atQ_parameters from MSSM11atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04148 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM19atQ_parameters from MSSM16atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04153 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM24atQ_parameters from MSSM19atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04157 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM25atQ_parameters from MSSM24atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04162 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM30atQ_parameters from MSSM25atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04167 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM63atQ_parameters from MSSM30atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:26 2025)(2.04174 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_MSSMatQ_spectrum_FS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21511 [s])[Default,Core][Debug]:
+Returning control to ScannerBit
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21521 [s])[Default,Core][Debug]:
+Entered Likelihood_Container::main
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21585 [s])[Default,Core][Debug]:
+Number of target vertices to calculate:    5
+Number of auxiliary vertices to calculate: 2
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21595 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21599 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21602 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling lnL_Z_mass from PrecisionBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21616 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21619 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21622 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling lnL_t_mass from PrecisionBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21635 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from MSSM7atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21638 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21641 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21644 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM9atQ_parameters from MSSM7atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21648 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM10atQ_parameters from MSSM9atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21652 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM11atQ_parameters from MSSM10atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21656 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM16atQ_parameters from MSSM11atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.2166 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM19atQ_parameters from MSSM16atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21665 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM24atQ_parameters from MSSM19atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21669 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM25atQ_parameters from MSSM24atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21674 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM30atQ_parameters from MSSM25atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21678 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM63atQ_parameters from MSSM30atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:31 2025)(7.21684 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_MSSMatQ_spectrum_FS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2469 [s])[Default,Core][Debug]:
+Returning control to ScannerBit
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.247 [s])[Default,Core][Debug]:
+Entered Likelihood_Container::main
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2472 [s])[Default,Core][Debug]:
+Number of target vertices to calculate:    5
+Number of auxiliary vertices to calculate: 2
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2473 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2473 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2473 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling lnL_Z_mass from PrecisionBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2475 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2475 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2476 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling lnL_t_mass from PrecisionBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2477 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from MSSM7atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2478 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling primary_parameters from StandardModel_SLHA2...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2479 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_SMINPUTS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2479 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM9atQ_parameters from MSSM7atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.248 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM10atQ_parameters from MSSM9atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.248 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM11atQ_parameters from MSSM10atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2481 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM16atQ_parameters from MSSM11atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2481 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM19atQ_parameters from MSSM16atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2482 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM24atQ_parameters from MSSM19atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2482 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM25atQ_parameters from MSSM24atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2483 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM30atQ_parameters from MSSM25atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2483 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling MSSM63atQ_parameters from MSSM30atQ...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:39 2025)(15.2484 [s])[Default,Dependency Resolver][Debug,Info]:
+Calling get_MSSMatQ_spectrum_FS from SpecBit...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5543 [s])[Default,Core][Debug]:
+Returning control to ScannerBit
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5544 [s])[Default,Core][Debug]:
+Entered Likelihood_Container::main
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5546 [s])[Default,Core][Debug]:
+Returning control to ScannerBit
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5548 [s])[Default,Core][Debug]:
+Entered Likelihood_Container::main
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5551 [s])[Default,Printers][Debug]:
+Number of <500MB Gathers to perform: 1
+Assigned communicator groups are:
+  [0 ]
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5551 [s])[Default,Printers][Debug]:
+Determining ID codes for HDF5 buffers for MPI transmission...
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5551 [s])[Default,Printers][Debug]:
+Converting buffer names and types to string for transmission...
+   type: 0; name: Invalidation Code
+   type: 0; name: MPIrank
+   type: 7; name: ModifiedLogLike
+   type: 3; name: pointID
+   type: 0; name: scanID
+Invalidation Code`~`0`~`MPIrank`~`0`~`ModifiedLogLike`~`7`~`pointID`~`3`~`scanID`~`0`~`
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5552 [s])[Default,Printers][Debug]:
+Gathering lengths of string messages...
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5552 [s])[Default,Printers][Debug]:
+Gathering all buffer name strings...
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5552 [s])[Default,Printers][Debug]:
+Splitting received buffer name string...
+   Inserted: type:0; name:Invalidation Code
+   Inserted: type:0; name:MPIrank
+   Inserted: type:7; name:ModifiedLogLike
+   Inserted: type:3; name:pointID
+   Inserted: type:0; name:scanID
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5556 [s])[Default,Printers][Debug]:
+Adding buffer names already on disk:
+   Added: type:0; name:MPIrank
+   Added: type:3; name:pointID
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5556 [s])[Default,Printers][Debug]:
+Broadcasting size of composited buffer name string
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5557 [s])[Default,Printers][Debug]:
+Received size for composited buffer name string:[67 ]
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5557 [s])[Default,Printers][Debug]:
+Broadcasting composited buffer name string
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5557 [s])[Default,Printers][Debug]:
+Computing buffer ID codes:
+   0: Invalidation Code
+   1: MPIrank
+   2: ModifiedLogLike
+   3: pointID
+   4: scanID
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5558 [s])[Default,Printers][Debug]:
+Building buffer chunks for MPI transmission
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5599 [s])[Default,Printers][Debug]:
+Number of blocks to recv from each process: [1 ]
+Total: 1
+
+--<>--<>--<>--<>--<>--<>--<>--
+(Tue Mar 25 15:28:41 2025)(17.5659 [s])[Default,Core][Debug]:
+Receiving all shutdown messages
+--<>--<>--<>--<>--<>--<>--<>--

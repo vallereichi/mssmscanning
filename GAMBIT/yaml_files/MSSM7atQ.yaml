@@ -38,7 +38,7 @@ Priors:
 Printer:
   printer: hdf5
   options:
-    output_file: "MSSM.hdf5"
+    output_file: "MSSM7atQ.hdf5"
     group: "/MSSM"
 
 Scanner:
@@ -133,6 +133,6 @@ KeyValues:
   likelihood:
     model_invalid_for_lnlike_below: -1e4
 
-  default_output_path: "runs/MSSM"
+  default_output_path: "runs/MSSM7atQ"
 
   debug: true

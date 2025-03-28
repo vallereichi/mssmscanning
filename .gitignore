@@ -7,3 +7,6 @@
 *.csv
 *.out
 *.log
+*.raw
+*.devo
+*.rparam

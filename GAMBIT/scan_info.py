@@ -18,5 +18,7 @@ isvalid_mask  = np.array(scan[isvalid_label], dtype=np.bool)
 n_points = len(scan[logL_label])
 n_valid_points = np.sum(isvalid_mask)
 
+
+print("\n\nScan Evaluation:\n")
 print("number of points in scan:        ", n_points)
 print("number of valid points in scan:  ", n_valid_points)

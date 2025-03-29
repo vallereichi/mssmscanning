@@ -68,9 +68,19 @@ def diver(
         ranges: list[list[float]], 
         mutation_scale_factor: float,
         crossover_rate: float,
-        objective_function: Callable[[list[float]], float]
+        objective_function: Callable[[list[float]], float],
+        conv_thresh: float = convergence_threshold,
+        max_iter: int = MAX_ITERATIONS
 
     ) -> tuple[list[list[float]], float]:
+
+
+    # give some feedback on the configuration
+    print("population size: ", population_size)
+    print("F: ", mutation_scale_factor)
+    print("Cr: ", crossover_rate)
+    print("convergence threshold: ", conv_thresh)
+    print("break after max iterations:", max_iter)
 
     population_list: list = []
     improvement_list: list = []
@@ -83,7 +93,7 @@ def diver(
     update_times: list = []    
 
     # main update loop
-    while len(population_list) <= MAX_ITERATIONS:
+    while len(population_list) <= max_iter:
         start_timer = time.time()
         current_population = population_list[-1]
 
@@ -130,7 +140,7 @@ def diver(
 
         
         # break condition
-        if 0 < improvement < convergence_threshold:
+        if 0 < improvement < conv_thresh:
             break
 
     return population_list, improvement_list, update_times

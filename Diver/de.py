@@ -1,6 +1,7 @@
 import numpy as np
 import random
 import typing
+import time
 from collections.abc import Callable
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation, PillowWriter
@@ -77,12 +78,13 @@ def diver(
     # initialize the population
     population: list = [[random.uniform(ranges[i][0], ranges[i][1]) for i in range(len(ranges))] for _ in range(population_size)]
     population_list.append(population)
-
     
     improvement: float = 0.
+    update_times: list = []    
 
     # main update loop
     while len(population_list) <= MAX_ITERATIONS:
+        start_timer = time.time()
         current_population = population_list[-1]
 
         # select a target vector
@@ -117,11 +119,12 @@ def diver(
             current_population[target_vector_id] = trial_vector
             improvement = abs(trial_lh - target_lh)
             
-
+        end_timer = time.time()
 
         new_population = current_population.copy()
         population_list.append(new_population)
         improvement_list.append(improvement)
+        update_times.append(start_timer - end_timer)
 
         print("population: ", len(population_list), "       improvement =", improvement)
 
@@ -130,7 +133,7 @@ def diver(
         if 0 < improvement < convergence_threshold:
             break
 
-    return population_list, improvement_list
+    return population_list, improvement_list, update_times
                 
 
 
@@ -142,7 +145,7 @@ def diver(
 
 
 if __name__ == "__main__":
-    populations, improvements = diver(population_size, ranges, mutation_scale_factor, crossover_rate, obj_parabolic)
+    populations, improvements, update_times = diver(population_size, ranges, mutation_scale_factor, crossover_rate, obj_parabolic)
 
     # create animation
     if len(ranges) == 2:

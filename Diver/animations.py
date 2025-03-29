@@ -26,7 +26,7 @@ cont_levels = 10
 """
 create data
 """
-populations, improvements = diver(NP, ranges, F, Cr, obj_func)
+populations, improvements, update_times = diver(NP, ranges, F, Cr, obj_func)
 
 
 """

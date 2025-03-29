@@ -101,7 +101,7 @@ Scanner:
     random:
       plugin: random
       like: LogLike
-      point_number: 100
+      point_number: 1000
   default_output_path: runs/MSSM19atQ_FS//scanner_plugins/
 ObsLikes:
   - purpose: Observable

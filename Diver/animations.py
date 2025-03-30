@@ -20,9 +20,9 @@ ranges = [(-50,50)]*2
 conv_thresh = 1e-5
 MAX_ITER = 10000
 
-obj_func = parabolic
+obj_func = two_valleys
 
-animation_name = "parabolic"
+animation_name = "two_valleys"
 cont_levels = 10
 
 

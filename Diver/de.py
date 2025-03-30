@@ -1,14 +1,18 @@
-import numpy as np
-import random
-import typing
+import sys
 import time
-from collections.abc import Callable
+import random
+import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation, PillowWriter
+from collections.abc import Callable
 
-"""
-global constants
-"""
+sys.path.append("../vallog")
+import vallog as vl
+
+
+'''initialize logs'''
+msg = vl.Logger("Release")
+
+'''global constants'''
 population_size: int = 10
 mutation_scale_factor: float = 0.5
 crossover_rate: float = 0.5
@@ -18,24 +22,14 @@ convergence_threshold: float = 1e-5
 MAX_ITERATIONS: int = 10000
 
 
-"""
-objective functions
-"""
-def gaussian(
-        point: list[float],
-        mu: float = 50,
-        sigma: float = 30
-
-    ) -> float:
+'''objective functions'''
+def gaussian(point: list[float], mu: float = 50, sigma: float = 30) -> float:
     
     return np.sum([-0.5 * np.log(2*np.pi*sigma**2) - (1/(2*sigma**2)) * (x - mu)**2 for x in point])
 obj_gaussian: Callable[[list[float], float, float], float] = gaussian
 
 
-def parabolic(
-        point: list[float]
-    
-    ) -> float:
+def parabolic(point: list[float]) -> float:
 
     return point[0]**2 + point[1]**2
 obj_parabolic: Callable[[list[float]], float] = parabolic
@@ -76,11 +70,14 @@ def diver(
 
 
     # give some feedback on the configuration
-    print("population size: ", population_size)
-    print("F: ", mutation_scale_factor)
-    print("Cr: ", crossover_rate)
-    print("convergence threshold: ", conv_thresh)
-    print("break after max iterations:", max_iter)
+    msg.sep()
+    msg.heading("starting differential evolution with the following configuration")
+    msg.log(f"NP: \t\t{population_size}", vl.info)
+    msg.log(f"F: \t\t{mutation_scale_factor}", vl.info)
+    msg.log(f"Cr: \t\t{crossover_rate}", vl.info)
+    msg.log(f"conv_thresh: \t{conv_thresh}", vl.info)
+    msg.log(f"max_iter: \t{max_iter}", vl.info)
+    msg.sep()
 
     population_list: list = []
     improvement_list: list = []
@@ -136,12 +133,18 @@ def diver(
         improvement_list.append(improvement)
         update_times.append(start_timer - end_timer)
 
-        print("population: ", len(population_list), "       improvement =", improvement)
+        msg.log(f"population: {len(population_list)}\t\timprovement = {improvement}", vl.debug)
 
         
         # break condition
         if 0 < improvement < conv_thresh:
             break
+
+    # information for the user
+    msg.heading("Differential Evolution has finished with")
+    msg.log(f"{len(population_list)} generations", vl.info)
+    msg.log(f"best final vector: {population_list[-1]}", vl.info)
+    msg.sep()
 
     return population_list, improvement_list, update_times
                 
@@ -157,43 +160,7 @@ def diver(
 if __name__ == "__main__":
     populations, improvements, update_times = diver(population_size, ranges, mutation_scale_factor, crossover_rate, obj_parabolic)
 
-    # create animation
-    if len(ranges) == 2:
     
-        metadata = dict(title="rand/1/bin", artist="Valentin Reichenspurner")
-        writer = PillowWriter(fps=15, metadata=metadata)
-
-        def parabolic_mesh(x: float, y:float) -> float:
-            return x**2 + y**2
-
-        y = list(np.linspace(ranges[1][0], ranges[1][1], 100))
-        x = list(np.linspace(ranges[0][0], ranges[0][1], 100))
-        X,Y = np.meshgrid(x,y)
-
-        z = parabolic_mesh(X,Y)
-
-        fig = plt.figure(figsize=(10,5))
-        ax1 = fig.add_subplot(121, projection='3d')
-        ax1.plot_surface(X,Y,z, cmap='plasma')
-        ax1.set_axis_off()
-
-
-        ax2 = fig.add_subplot(122)
-        contour = ax2.contour(X,Y,z, levels=50)
-        ax2.set_xlabel("x")
-        ax2.set_ylabel("y")
-        ax2.set_xlim(ranges[0][0], ranges[0][1])
-        ax2.set_ylim(ranges[1][0], ranges[1][1])
-        ax2.set_aspect('equal', adjustable='box')
-        fig.colorbar(contour, label="p(x,y)")
-
-        scatter = ax2.scatter([], [], color='magenta', alpha=1, marker='.')
-
-        with writer.saving(fig, 'diver_animation.gif', 100):
-
-            for frame in populations:
-                scatter.set_offsets(frame)
-                writer.grab_frame()
 
 
 

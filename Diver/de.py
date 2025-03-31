@@ -5,7 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections.abc import Callable
 
-sys.path.append("../vallog")
 import vallog as vl
 
 

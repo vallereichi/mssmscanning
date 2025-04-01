@@ -16,7 +16,7 @@ from de import diver, parabolic, two_valleys, four_valleys
 """
 global constants
 """
-NP = 50
+NP = 100
 F = 0.7
 Cr = 0.7
 ranges = [(-50, 50)] * 2

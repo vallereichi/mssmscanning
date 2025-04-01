@@ -1,72 +1,90 @@
-import sys
+"""
+Differential Evolution.
+An optimizing algorithm with fast convergence and good stability for high dimensional parameter spaces.
+"""
+
+from collections.abc import Callable
 import time
 import random
 import numpy as np
-import matplotlib.pyplot as plt
-from collections.abc import Callable
 
 import vallog as vl
 
 
-'''initialize logs'''
+# initialize logs
 msg = vl.Logger("Release")
 
-'''global constants'''
-population_size: int = 10
-mutation_scale_factor: float = 0.5
-crossover_rate: float = 0.5
-ranges: list[tuple[float]] = [(-50,50), (-50,50)]
 
-convergence_threshold: float = 1e-5
-MAX_ITERATIONS: int = 10000
-
-
-'''objective functions'''
+# objective functions
 def gaussian(point: list[float], mu: float = 50, sigma: float = 30) -> float:
-    
-    return np.sum([-0.5 * np.log(2*np.pi*sigma**2) - (1/(2*sigma**2)) * (x - mu)**2 for x in point])
+    """
+    negative log likelihood in the form of a gaussian shell
+    """
+
+    return np.sum([-0.5 * np.log(2 * np.pi * sigma**2) - (1 / (2 * sigma**2)) * (x - mu) ** 2 for x in point])
+
+
 obj_gaussian: Callable[[list[float], float, float], float] = gaussian
 
 
 def parabolic(point: list[float]) -> float:
+    """
+    test objective function
+    """
 
-    return point[0]**2 + point[1]**2
+    return point[0] ** 2 + point[1] ** 2
+
+
 obj_parabolic: Callable[[list[float]], float] = parabolic
 
+
 def two_valleys(point: list[float]) -> float:
+    """
+    test objective function
+    """
     x = point[0]
     y = point[1]
-    valley1 = 5 * np.exp(-((x - 20)**2 + (y - 2)**2)/100)
-    valley2 = 10 * np.exp(-((x + 20)**2 + (y + 2)**2)/300)
+    valley1 = 5 * np.exp(-((x - 20) ** 2 + (y - 2) ** 2) / 100)
+    valley2 = 10 * np.exp(-((x + 20) ** 2 + (y + 2) ** 2) / 300)
 
     return -valley1 - valley2 + 100
 
+
 def four_valleys(point: list[float]) -> float:
+    """
+    test objective function
+    """
     x = point[0]
     y = point[1]
-    valley1 = np.exp(-((x - 20)**2 + (y - 20)**2)/200)
-    valley2 = np.exp(-((x + 20)**2 + (y - 20)**2)/200)
-    valley3 = np.exp(-((x - 20)**2 + (y + 20)**2)/200)
-    valley4 = np.exp(-((x + 20)**2 + (y + 20)**2)/200)
+    valley1 = np.exp(-((x - 20) ** 2 + (y - 20) ** 2) / 200)
+    valley2 = np.exp(-((x + 20) ** 2 + (y - 20) ** 2) / 200)
+    valley3 = np.exp(-((x - 20) ** 2 + (y + 20) ** 2) / 200)
+    valley4 = np.exp(-((x + 20) ** 2 + (y + 20) ** 2) / 200)
     return -valley1 - valley2 - valley3 - valley4 + 1000
 
 
-
-
-"""
-differential evolution
-"""
+# run differential evolution
 def diver(
-        population_size: int,
-        ranges: list[list[float]], 
-        mutation_scale_factor: float,
-        crossover_rate: float,
-        objective_function: Callable[[list[float]], float],
-        conv_thresh: float = convergence_threshold,
-        max_iter: int = MAX_ITERATIONS
+    population_size: int,
+    ranges: list[list[float]],
+    mutation_scale_factor: float,
+    crossover_rate: float,
+    objective_function: Callable[[list[float]], float],
+    conv_thresh: float = 1e-3,
+    max_iter: int = 10e3,
+) -> tuple[list[list[float]], float]:
+    """
+    running the differential evolution algorithm with user specific configuration
 
-    ) -> tuple[list[list[float]], float]:
-
+    *parameters*
+    population_size:        determines how many points are initialized for the DE run
+    ranges:                 specifies the lower and upper bounds of the parameter space
+    mutation_scale_factor   the factor by which the difference vector will be scaled in the mutation step. Larger values lead to higher diversity
+    crossover_rate:         used in the crossover step to create the trial vector. larger values are suited for higher diversity in the population while small
+                            values are effective for uncorrelated dimensions
+    cov_thresh:             Once the improvement of a generation reaches this threshold, the algorithm will stop and output the result
+    max_iter:               maximum iterations the algorithm will perform before it stops and outputs the result
+    """
 
     # give some feedback on the configuration
     msg.sep()
@@ -82,11 +100,13 @@ def diver(
     improvement_list: list = []
 
     # initialize the population
-    population: list = [[random.uniform(ranges[i][0], ranges[i][1]) for i in range(len(ranges))] for _ in range(population_size)]
+    population: list = [
+        [random.uniform(ranges[i][0], ranges[i][1]) for i in range(len(ranges))] for _ in range(population_size)
+    ]
     population_list.append(population)
-    
-    improvement: float = 0.
-    update_times: list = []    
+
+    improvement: float = 0.0
+    update_times: list = []
 
     # main update loop
     while len(population_list) <= max_iter:
@@ -94,7 +114,7 @@ def diver(
         current_population = population_list[-1]
 
         # select a target vector
-        target_vector_id = random.randint(0, population_size-1)
+        target_vector_id = random.randint(0, population_size - 1)
         target_vector: list[float] = current_population[target_vector_id]
 
         # mutation
@@ -103,14 +123,14 @@ def diver(
 
         # crossover
         trial_vector: list[float] = []
-        for i in range(len(target_vector)):
-            random_value = random.uniform(0,1)
+        for i, _ in enumerate(target_vector):
+            random_value = random.uniform(0, 1)
             if random_value <= crossover_rate:
                 trial_vector.append(donor_vector[i])
             else:
                 trial_vector.append(target_vector[i])
 
-        random_dimension = random.randint(0, len(ranges)-1)
+        random_dimension = random.randint(0, len(ranges) - 1)
         trial_vector[random_dimension] = donor_vector[random_dimension]
 
         # selection
@@ -120,11 +140,11 @@ def diver(
         if abs(target_lh) < abs(trial_lh):
             current_population[target_vector_id] = target_vector
             improvement = 0
-            
+
         if abs(target_lh) > abs(trial_lh):
             current_population[target_vector_id] = trial_vector
             improvement = abs(trial_lh - target_lh)
-            
+
         end_timer = time.time()
 
         new_population = current_population.copy()
@@ -134,7 +154,6 @@ def diver(
 
         msg.log(f"population: {len(population_list)}\t\timprovement = {improvement}", vl.debug)
 
-        
         # break condition
         if 0 < improvement < conv_thresh:
             break
@@ -146,25 +165,16 @@ def diver(
     msg.sep()
 
     return population_list, improvement_list, update_times
-                
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
-    populations, improvements, update_times = diver(population_size, ranges, mutation_scale_factor, crossover_rate, obj_parabolic)
+    """global constants"""
+    NP: int = 10
+    F: float = 0.5
+    Cr: float = 0.5
+    parameter_space: list[tuple[float]] = [(-50, 50), (-50, 50)]
 
-    
+    convergence_threshold: float = 1e-5
+    MAX_ITERATIONS: int = 10000
 
-
-
-    
-
-
-    
-    
+    populations, improvements, times = diver(NP, parameter_space, F, Cr, obj_gaussian)

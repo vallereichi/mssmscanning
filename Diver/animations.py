@@ -24,9 +24,9 @@ ranges = [(-50, 50)] * 2
 conv_thresh = 1e-5
 MAX_ITER = 10000
 
-obj_func = two_valleys
+obj_func = four_valleys
 
-animation_name = "two_valleys"
+animation_name = "four_valleys"
 cont_levels = 10
 
 
@@ -60,7 +60,7 @@ def animate() -> None:
     """
     # define metadata and writer
     metadata = dict(title="diver animation", artist="Valentin Reichenspurner")
-    writer = PillowWriter(fps=30, metadata=metadata)
+    writer = PillowWriter(fps=15, metadata=metadata)
 
     # create meshgrid
     y = list(np.linspace(ranges[1][0], ranges[1][1], 100))

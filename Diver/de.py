@@ -76,15 +76,23 @@ def diver(
     """
     running the differential evolution algorithm with user specific configuration
 
-    *parameters*
+    *parameters*\n
     population_size:        determines how many points are initialized for the DE run
-    ranges:                 specifies the lower and upper bounds of the parameterspace
-    mutation_scale_factor
-                           the factor by which the difference vector will be scaled in the mutation step. Larger values lead to higher diversity
-    crossover_rate:         used in the crossover step to create the trial vector. larger values are suited for higher diversity in the population while small
-                            values are effective for uncorrelated dimensions
-    cov_thresh:             Once the improvement of a generation reaches this threshold, the algorithm will stop and output the result
-    max_iter:               maximum iterations the algorithm will perform before it stops and outputs the result
+
+    ranges:                 specifies the lower and upper bounds of the
+                            parameterspace
+
+    mutation_scale_factor:  the factor by which the difference vector will be
+                            scaled in the mutation step. Larger values lead to higher diversity
+
+    crossover_rate:         used in the crossover step to create the trial
+                            vector. larger values are suited for higher diversity in the population while small values are effective for uncorrelated dimensions
+
+    cov_thresh:             Once the improvement of a generation reaches
+                            this threshold, the algorithm will stop and output the result
+
+    max_iter:               maximum iterations the algorithm will perform
+                            before it stops and outputs the result
     """
 
     # give some feedback on the configuration

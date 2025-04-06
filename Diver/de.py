@@ -78,8 +78,9 @@ def diver(
 
     *parameters*
     population_size:        determines how many points are initialized for the DE run
-    ranges:                 specifies the lower and upper bounds of the parameter space
-    mutation_scale_factor   the factor by which the difference vector will be scaled in the mutation step. Larger values lead to higher diversity
+    ranges:                 specifies the lower and upper bounds of the parameterspace
+    mutation_scale_factor
+                           the factor by which the difference vector will be scaled in the mutation step. Larger values lead to higher diversity
     crossover_rate:         used in the crossover step to create the trial vector. larger values are suited for higher diversity in the population while small
                             values are effective for uncorrelated dimensions
     cov_thresh:             Once the improvement of a generation reaches this threshold, the algorithm will stop and output the result
@@ -110,47 +111,45 @@ def diver(
 
     # main update loop
     while len(population_list) <= max_iter:
-        start_timer = time.time()
-        current_population = population_list[-1]
+        with vl.Timer() as timer:
+            current_population = population_list[-1]
 
-        # select a target vector
-        target_vector_id = random.randint(0, population_size - 1)
-        target_vector: list[float] = current_population[target_vector_id]
+            # select a target vector
+            target_vector_id = random.randint(0, population_size - 1)
+            target_vector: list[float] = current_population[target_vector_id]
 
-        # mutation
-        a, b, c = random.sample(current_population, 3)
-        donor_vector: list[float] = [a[i] + mutation_scale_factor * (b[i] - c[i]) for i in range(len(a))]
+            # mutation
+            a, b, c = random.sample(current_population, 3)
+            donor_vector: list[float] = [a[i] + mutation_scale_factor * (b[i] - c[i]) for i in range(len(a))]
 
-        # crossover
-        trial_vector: list[float] = []
-        for i, _ in enumerate(target_vector):
-            random_value = random.uniform(0, 1)
-            if random_value <= crossover_rate:
-                trial_vector.append(donor_vector[i])
-            else:
-                trial_vector.append(target_vector[i])
+            # crossover
+            trial_vector: list[float] = []
+            for i, _ in enumerate(target_vector):
+                random_value = random.uniform(0, 1)
+                if random_value <= crossover_rate:
+                    trial_vector.append(donor_vector[i])
+                else:
+                    trial_vector.append(target_vector[i])
 
-        random_dimension = random.randint(0, len(ranges) - 1)
-        trial_vector[random_dimension] = donor_vector[random_dimension]
+            random_dimension = random.randint(0, len(ranges) - 1)
+            trial_vector[random_dimension] = donor_vector[random_dimension]
 
-        # selection
-        target_lh = objective_function(target_vector)
-        trial_lh = objective_function(trial_vector)
+            # selection
+            target_lh = objective_function(target_vector)
+            trial_lh = objective_function(trial_vector)
 
-        if abs(target_lh) < abs(trial_lh):
-            current_population[target_vector_id] = target_vector
-            improvement = 0
+            if abs(target_lh) < abs(trial_lh):
+                current_population[target_vector_id] = target_vector
+                improvement = 0
 
-        if abs(target_lh) > abs(trial_lh):
-            current_population[target_vector_id] = trial_vector
-            improvement = abs(trial_lh - target_lh)
-
-        end_timer = time.time()
+            if abs(target_lh) > abs(trial_lh):
+                current_population[target_vector_id] = trial_vector
+                improvement = abs(trial_lh - target_lh)
 
         new_population = current_population.copy()
         population_list.append(new_population)
         improvement_list.append(improvement)
-        update_times.append(start_timer - end_timer)
+        update_times.append(timer.elapsed_time)
 
         msg.log(f"population: {len(population_list)}\t\timprovement = {improvement}", vl.debug)
 

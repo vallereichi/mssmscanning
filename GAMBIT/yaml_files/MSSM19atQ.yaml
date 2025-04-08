@@ -82,7 +82,7 @@ Scanner:
     random:
       plugin: random
       like: LogLike
-      point_number: 1
+      point_number: 100
 
 ObsLikes:
   # Observables
@@ -90,44 +90,32 @@ ObsLikes:
     capability: MSSM_spectrum
     type: map_str_dbl
 
-  - purpose: Observable
-    capability: muon_gm2
+    
+
+  # LogLikes  
 
   
+  
 
-  # LogLikes
-  - purpose: LogLike
-    capability: lnL_t_mass
+  
+  
 
-  - purpose: LogLike
-    capability: lnL_Z_mass
-
-  - purpose: LogLike
-    capability: lnL_GF
-
-  - purpose: LogLike
-    capability: lnL_gm2
+  
+  
   
 
 Rules:
   - capability: unimproved_MSSM_spectrum
     type: Spectrum
-    function: get_MSSM_spectrum_SPheno                    # here seems to be a problem with SPheno
+    function: get_MSSM_spectrum_SPheno                   
     # function: get_MSSMatQ_spectrum_FS
     
   - capability: MSSM_spectrum
     type: Spectrum
     function: make_MSSM_precision_spectrum_none
 
-  - capability: muon_gm2
-    function: GM2C_SUSY
 
-  - capability: lnL_gm2
-    function: lnL_gm2
-    dependencies:
-      - capability: muon_gm2_SM
-        function: gm2_SM_ee
-        module: PrecisionBit
+
 
   
 

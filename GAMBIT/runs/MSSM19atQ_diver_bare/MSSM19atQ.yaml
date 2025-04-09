@@ -1,8 +1,31 @@
 Parameters:
-  #Standard Model Parameters
-  StandardModel_SLHA2: !import include/StandardModel_SLHA2_defaults.yaml
-
-  #MSSM Parameters
+  StandardModel_SLHA2:
+    alphainv: 1.27950000E+02
+    GF: 1.16637870E-05
+    alphaS: 1.18100000E-01
+    mZ: 9.11876000E+01
+    mBmB: 4.18000000E+00
+    mT: 1.73340000E+02
+    mTau: 1.77686000E+00
+    mNu3: 0
+    mE: 5.10998946E-04
+    mNu1: 0
+    mMu: 1.05658375E-01
+    mNu2: 0
+    mD: 4.70000000E-03
+    mU: 2.20000000E-03
+    mS: 9.60000000E-02
+    mCmC: 1.28000000E+00
+    CKM_lambda: 0.22537
+    CKM_A: 0.814
+    CKM_rhobar: 0.117
+    CKM_etabar: 0.353
+    theta12: 0.58376
+    theta23: 0.76958
+    theta13: 0.15495
+    delta13: 0
+    alpha1: 0
+    alpha2: 0
   MSSM19atQ:
     Ad_3:
       range: [-2000.0, 2000.0]
@@ -58,17 +81,14 @@ Parameters:
     mu2_3:
       range: [2000.0, 5000.0]
       prior_type: flat
-
-Priors:
-  #all priors are simple
-
+Priors: ~
 Printer:
   printer: hdf5
   options:
-    group: "/MSSM_random"
-    output_file: "MSSM19atQ.hdf5"
+    group: /MSSM_random
+    output_file: MSSM19atQ.hdf5
     delete_file_on_restart: true
-
+    default_output_path: runs/MSSM19atQ//samples/
 Scanner:
   use_scanner: de
   scanners:
@@ -79,68 +99,38 @@ Scanner:
       convthresh: 1e-3
       maxgen: 100
       verbosity: 3
-
     random:
       plugin: random
       like: LogLike
       point_number: 100
-
+  default_output_path: runs/MSSM19atQ//scanner_plugins/
 ObsLikes:
-  # Observables
   - purpose: Observable
     capability: MSSM_spectrum
     type: map_str_dbl
-
-    
-
-  # LogLikes  
-
-  
-  
-
-  
-  
-
-  
-  
-  
-
 Rules:
   - capability: unimproved_MSSM_spectrum
     type: Spectrum
-    function: get_MSSM_spectrum_SPheno                   
-    # function: get_MSSMatQ_spectrum_FS
-    
+    function: get_MSSM_spectrum_SPheno
   - capability: MSSM_spectrum
     type: Spectrum
     function: make_MSSM_precision_spectrum_none
-
-
-
-
-  
-
-  
-
 Logger:
   redirection:
-    [Default]: "default.log"
-    [Warning]: "warning.log"
-    [Error, Fatal]: "error.log"
-    [Debug]: "debug.log"
-    [Core]: "core.log"
-    [Dependency Resolver]: "dep_res.log"
-    [Printers]: "printer.log"
-    [PrecisionBit]: "prec_bit.log"
-    [SpecBit]: "spec_bit.log"
-
+    [Default]: default.log
+    [Warning]: warning.log
+    [Error, Fatal]: error.log
+    [Debug]: debug.log
+    [Core]: core.log
+    [Dependency Resolver]: dep_res.log
+    [Printers]: printer.log
+    [PrecisionBit]: prec_bit.log
+    [SpecBit]: spec_bit.log
+  default_output_path: runs/MSSM19atQ//logs/
 KeyValues:
   dependency_resolution:
     prefer_model_specific_functions: true
-
   likelihood:
     model_invalid_for_lnlike_below: -1e5
-
-  default_output_path: "runs/MSSM19atQ/"
-
+  default_output_path: runs/MSSM19atQ/
   debug: true

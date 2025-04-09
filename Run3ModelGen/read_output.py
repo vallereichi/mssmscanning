@@ -1,69 +1,82 @@
+"""
+read scan data and create plots
+"""
+
 import os
+import h5py
 import uproot
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
 
-prefix: list[str] = ["SS", "SP", "MO", "SI", "GM2"]
-
-
-
-def fetch_parameter(scan_dir: str, parameter_name: str, prefix: str, scan_file: str = "ntuple.0.0.root:susy") -> pd.DataFrame:
-    '''create a pandas dataframe from a scan output file'''
+def fetch_parameter_r3mg(
+    scan_dir: str, parameter_name: str, prefix: str, scan_file: str = "ntuple.0.0.root:susy"
+) -> pd.DataFrame:
+    """create a pandas dataframe from a root output file"""
     scan_data = uproot.open(scan_dir + scan_file)
-    parameter_df: pd.DataFrame = scan_data.arrays(filter_name=f'{prefix}*{parameter_name}*', library='pd')
+    parameter_df: pd.DataFrame = scan_data.arrays(filter_name=f"{prefix}*{parameter_name}*", library="pd")
     return parameter_df
 
 
-# plot the parameter
-# if not os.path.isdir(path_to_plots): os.makedirs(path_to_plots)
-# fig = plt.figure(figsize=(7,5))
-# ax = fig.add_subplot(111)
+def fetch_parameter_gambit(scan_path: str, parameter_name: str, prefix: str = None) -> pd.DataFrame:
+    """create a pandas dataframe from a hdf5 output file"""
+    hdf5 = h5py.File(scan_path, "r")
+    scan = hdf5["MSSM"]
+    search_key = parameter_name if prefix is None else f"{prefix}.*{parameter_name}"
+    parameter_key = ""
+    for key in scan.keys():
+        if key.match(search_key):
+            parameter_key = key
+            break
+    parameter_df = pd.DataFrame(data=scan[parameter_key])
+    print(parameter_df)
+    return parameter_df
 
-# bins = np.histogram_bin_edges(parameter_df[parameter_df.keys()[0]], bins=50)
 
-# for id, par in enumerate(parameter_df.keys()):
-#     ax.hist(parameter_df[par], bins=bins, color=plt_colors[id], alpha=0.5,
-#             label=par.split('_')[0])
-    
-# ax.set_xlabel(parameter)
-# ax.set_ylabel("counts")
-# ax.legend()
-# fig.tight_layout()
-# fig.savefig(path_to_plots + parameter, dpi=500)
 def plot_parameter(parameter_name: str, data: pd.DataFrame, output_path: str = "plots/") -> None:
-    '''create a histogramm from a pandas dataframe'''
-    plt_colors: list[str] = ['mediumorchid', 'lightseagreen', 'crimson'] 
+    """create a histogramm from a pandas dataframe"""
+    plt_colors: list[str] = ["lightseagreen", "crimson", "mediumorchid"]
 
-    fig = plt.figure(figsize=(7,5))
+    fig = plt.figure(figsize=(7, 5))
     ax = fig.add_subplot(111)
 
     bins = np.histogram_bin_edges(data[data.keys()[0]], bins=50)
 
-    for id, par in enumerate(data.keys()):
-        ax.hist(data[par], bins=bins, color=plt_colors[id], alpha=0.5, label=par.split('#')[0])
+    for i, par in enumerate(data.keys()):
+        ax.hist(data[par], bins=bins, color=plt_colors[i], alpha=0.5, label=par.split("#")[0])
 
     ax.set_xlabel(parameter_name)
-    ax.set_ylabel('counts')
+    ax.set_ylabel("counts")
     ax.legend()
     fig.tight_layout()
 
-    if not os.path.isdir(output_path): os.makedirs(output_path)
+    if not os.path.isdir(output_path):
+        os.makedirs(output_path)
     fig.savefig(output_path + parameter_name, dpi=500)
 
 
 def main():
+    """entry point"""
     mssm19atq_scan = "runs/MSSM19atQ/"
     mssm19atq_ma_scan = "runs/MSSM19atQ_mA/"
-    scan_list: list[str] = [mssm19atq_scan, mssm19atq_ma_scan]
+    mssm19atq_gambit_scan = "../GAMBIT/runs/MSSM19atQ_random_bare/samples/MSSM19atQ.hdf5"
+    scan_list: list[str] = [mssm19atq_scan, mssm19atq_ma_scan, mssm19atq_gambit_scan]
+    labels: list[str] = ["MSSM19atQ_MG", "MSSM19atQ_mA_MG", "MSSM19atQ_GAMBIT"]
     prefix = "SP"
     parameter_name = "m_h"
 
     df_list: list[pd.DataFrame] = []
-    for scan in scan_list:
-        df = fetch_parameter(scan, parameter_name, prefix)
-        column_names = [scan.split('/')[-2] + '#' + df.columns[i] for i in range(len(df.columns))]
+    for i, scan in enumerate(scan_list):
+        try:
+            df = fetch_parameter_r3mg(scan, parameter_name, prefix)
+        except:
+            pass
+        try:
+            df = fetch_parameter_gambit(scan, parameter_name)
+        except:
+            pass
+        column_names = [labels[i]]
         df = df.set_axis(column_names, axis=1)
         df_list.append(df)
 
@@ -75,7 +88,5 @@ def main():
     plot_parameter(parameter_name, parameter_df)
 
 
-
-
-if __name__ =="__main__":
+if __name__ == "__main__":
     main()

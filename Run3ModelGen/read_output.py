@@ -70,12 +70,12 @@ def main():
     for i, scan in enumerate(scan_list):
         try:
             df = fetch_parameter_r3mg(scan, parameter_name, prefix)
-        except:
-            pass
+        except FileNotFoundError:
+            continue
         try:
             df = fetch_parameter_gambit(scan, parameter_name)
-        except:
-            pass
+        except FileNotFoundError:
+            continue
         column_names = [labels[i]]
         df = df.set_axis(column_names, axis=1)
         df_list.append(df)

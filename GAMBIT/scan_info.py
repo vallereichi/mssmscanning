@@ -9,15 +9,11 @@ import vallog as vl
 """initialize logger"""
 msg = vl.Logger("Debug")
 
-scan_output_file = "runs/MSSM19atQ/samples/MSSM19atQ.hdf5"
+scan_output_file = "runs/MSSM19atQ_tlnl/samples/MSSM19atQ.hdf5"
 group = "MSSM"
 
 """read the file"""
 scan = h5py.File(scan_output_file, "r")
-
-for key in scan[group].keys():
-    print(key)
-
 
 logL_label = group + "/pointID"
 isvalid_label = group + "/pointID_isvalid"

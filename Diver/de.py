@@ -7,61 +7,39 @@ from collections.abc import Callable
 import time
 import random
 import numpy as np
-
 import vallog as vl
 
+import objectives
+
+# type hinting
+type Vector = list[float]
+type Population = list[Vector]
+type Likelihood = Callable[[Vector], float]
 
 # initialize logs
 msg = vl.Logger("Release")
 
+# function declarations
+def get_best_vector(population: Population, objective_function: Likelihood) -> tuple[Vector, int, float]:
+    """find the best vector in a population"""
+    best_vector: Vector = population[0]
+    best_vector_id: int = 0
+    best_lh: float = 0.0
 
-# objective functions
-def gaussian(point: list[float], mu: float = 50, sigma: float = 30) -> float:
-    """
-    negative log likelihood in the form of a gaussian shell
-    """
+    for i, point in enumerate(population):
+        lh: float = objective_function(point)
+        if abs(lh) < best_lh or best_lh == 0.0:
+            best_vector = point
+            best_vector_id = i
+            best_lh = lh
 
-    return np.sum([-0.5 * np.log(2 * np.pi * sigma**2) - (1 / (2 * sigma**2)) * (x - mu) ** 2 for x in point])
+    return best_vector, best_vector_id, best_lh
 
-
-obj_gaussian: Callable[[list[float], float, float], float] = gaussian
-
-
-def parabolic(point: list[float]) -> float:
-    """
-    test objective function
-    """
-
-    return point[0] ** 2 + point[1] ** 2
-
-
-obj_parabolic: Callable[[list[float]], float] = parabolic
-
-
-def two_valleys(point: list[float]) -> float:
-    """
-    test objective function
-    """
-    x = point[0]
-    y = point[1]
-    valley1 = 5 * np.exp(-((x - 20) ** 2 + (y - 2) ** 2) / 100)
-    valley2 = 10 * np.exp(-((x + 20) ** 2 + (y + 2) ** 2) / 300)
-
-    return -valley1 - valley2 + 100
-
-
-def four_valleys(point: list[float]) -> float:
-    """
-    test objective function
-    """
-    x = point[0]
-    y = point[1]
-    valley1 = np.exp(-((x - 20) ** 2 + (y - 20) ** 2) / 200)
-    valley2 = np.exp(-((x + 20) ** 2 + (y - 20) ** 2) / 200)
-    valley3 = np.exp(-((x - 20) ** 2 + (y + 20) ** 2) / 200)
-    valley4 = np.exp(-((x + 20) ** 2 + (y + 20) ** 2) / 200)
-    return -valley1 - valley2 - valley3 - valley4 + 1000
-
+def mutation_simple(population: Population, tagret_vector_id: int, F: float = 0.8) -> Vector:
+    """create a donor vector from 3 randomly selected points of the population"""
+    a, b, c = random.sample(population, 3)
+    donor_vector: Vector = [a[i] + F * (b[i] - c[i]) for i in range(len(a))]
+    return donor_vector
 
 # run differential evolution
 def diver(
@@ -69,10 +47,10 @@ def diver(
     ranges: list[list[float]],
     mutation_scale_factor: float,
     crossover_rate: float,
-    objective_function: Callable[[list[float]], float],
+    objective_function: Likelihood,
     conv_thresh: float = 1e-3,
     max_iter: int = 10e3,
-) -> tuple[list[list[float]], float]:
+) -> tuple[Population, list[float], list[float]]:
     """
     running the differential evolution algorithm with user specific configuration
 
@@ -103,7 +81,7 @@ def diver(
     msg.log(f"Cr: \t\t{crossover_rate}", vl.info)
     msg.log(f"conv_thresh: \t{conv_thresh}", vl.info)
     msg.log(f"max_iter: \t{max_iter}", vl.info)
-    msg.sep()
+    msg.sep(" ")
 
     population_list: list = []
     improvement_list: list = []
@@ -127,8 +105,7 @@ def diver(
             target_vector: list[float] = current_population[target_vector_id]
 
             # mutation
-            a, b, c = random.sample(current_population, 3)
-            donor_vector: list[float] = [a[i] + mutation_scale_factor * (b[i] - c[i]) for i in range(len(a))]
+            donor_vector: Vector = mutation_simple(current_population, target_vector_id, mutation_scale_factor)
 
             # crossover
             trial_vector: list[float] = []
@@ -168,7 +145,7 @@ def diver(
     # information for the user
     msg.heading("Differential Evolution has finished with")
     msg.log(f"{len(population_list)} generations", vl.info)
-    msg.log(f"best final vector: {population_list[-1]}", vl.info)
+    msg.log(f"best final vector: {get_best_vector(population_list[-1], objective_function)[0]}", vl.info)
     msg.sep()
 
     return population_list, improvement_list, update_times
@@ -181,7 +158,9 @@ if __name__ == "__main__":
     Cr: float = 0.5
     parameter_space: list[tuple[float]] = [(-50, 50), (-50, 50)]
 
+    objective = objectives.gaussian
+
     convergence_threshold: float = 1e-5
     MAX_ITERATIONS: int = 10000
 
-    populations, improvements, times = diver(NP, parameter_space, F, Cr, obj_gaussian)
+    populations, improvements, times = diver(NP, parameter_space, F, Cr, objective)

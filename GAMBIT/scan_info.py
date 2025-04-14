@@ -1,11 +1,19 @@
+"""
+read scan output files and collect some information
+"""
+
 import h5py
 import numpy as np
+import vallog as vl
+
+"""initialize logger"""
+msg = vl.Logger("Debug")
 
 scan_output_file = "runs/MSSM19atQ/samples/MSSM19atQ.hdf5"
-group= "MSSM"
+group = "MSSM"
 
-'''read the file'''
-scan = h5py.File(scan_output_file, 'r')
+"""read the file"""
+scan = h5py.File(scan_output_file, "r")
 
 for key in scan[group].keys():
     print(key)
@@ -13,12 +21,14 @@ for key in scan[group].keys():
 
 logL_label = group + "/pointID"
 isvalid_label = group + "/pointID_isvalid"
-isvalid_mask  = np.array(scan[isvalid_label], dtype=np.bool)
+isvalid_mask = np.array(scan[isvalid_label], dtype=np.bool)
 
 n_points = len(scan[logL_label])
 n_valid_points = np.sum(isvalid_mask)
 
+msg.sep()
+msg.heading("Scan Evaluation")
+msg.log(f"Final dataset size: {n_points}", vl.info)
+msg.log(f"Number of valid points: {n_valid_points}", vl.info)
+msg.sep()
 
-print("\n\nScan Evaluation:\n")
-print("number of points in scan:        ", n_points)
-print("number of valid points in scan:  ", n_valid_points)

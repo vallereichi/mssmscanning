@@ -89,6 +89,23 @@ class Diver:
 
         return best_vector, best_vector_id, best_lh
 
+    def select_target_ramdom(self) -> tuple[Vector, int]:
+        """select a random target vector from the population"""
+        target_vector_id = random.randint(0, len(self.current_population) - 1)
+        target_vector: list[float] = self.current_population[target_vector_id]
+        return target_vector, target_vector_id
+
+    def select_target_best(self) -> tuple[Vector, int]:
+        """select the best vector from a population as the target vector"""
+        best_vector, best_vector_id, _ = get_best_vector(self.current_population, self.objective_func)
+        return best_vector, best_vector_id
+
+    def update(self):
+        pass
+
+    def run(self):
+        pass
+
 
 # function declarations
 def get_best_vector(population: Population, objective_function: Likelihood) -> tuple[Vector, int, float]:

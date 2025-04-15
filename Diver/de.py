@@ -19,6 +19,7 @@ type Likelihood = Callable[[Vector], float]
 # initialize logs
 msg = vl.Logger("Release")
 
+
 # function declarations
 def get_best_vector(population: Population, objective_function: Likelihood) -> tuple[Vector, int, float]:
     """find the best vector in a population"""
@@ -35,11 +36,65 @@ def get_best_vector(population: Population, objective_function: Likelihood) -> t
 
     return best_vector, best_vector_id, best_lh
 
-def mutation_simple(population: Population, tagret_vector_id: int, F: float = 0.8) -> Vector:
+
+def select_target_ramdom(population: Population) -> tuple[Vector, int]:
+    """select a random target vector from the population"""
+    target_vector_id = random.randint(0, len(population) - 1)
+    target_vector: list[float] = population[target_vector_id]
+    return target_vector, target_vector_id
+
+
+def select_target_best(population: Population, objective_function: Likelihood) -> tuple[Vector, int]:
+    """select the best vector from a population as the target vector"""
+    best_vector, best_vector_id, _ = get_best_vector(population, objective_function)
+    return best_vector, best_vector_id
+
+
+def mutation_simple(population: Population, tagret_vector_id: int, mutation_scale_factor: float = 0.8) -> Vector:
     """create a donor vector from 3 randomly selected points of the population"""
-    a, b, c = random.sample(population, 3)
-    donor_vector: Vector = [a[i] + F * (b[i] - c[i]) for i in range(len(a))]
+    population_cpy = population.copy()
+    population_cpy.pop(tagret_vector_id)
+    a, b, c = random.sample(population_cpy, 3)
+    donor_vector: Vector = [a[i] + mutation_scale_factor * (b[i] - c[i]) for i in range(len(a))]
     return donor_vector
+
+
+def crossover(target_vector: Vector, donor_vector: Vector, crossover_rate: float = 0.8) -> Vector:
+    """create the trial vector from the selected target and the donor vector"""
+    trial_vector: list[float] = []
+    for i, _ in enumerate(target_vector):
+        random_value = random.uniform(0, 1)
+        if random_value <= crossover_rate:
+            trial_vector.append(donor_vector[i])
+        else:
+            trial_vector.append(target_vector[i])
+
+    random_dimension = random.randint(0, len(target_vector) - 1)
+    trial_vector[random_dimension] = donor_vector[random_dimension]
+    return trial_vector
+
+
+def selection(
+    target_vector: Vector,
+    target_vector_id: int,
+    trial_vector: Vector,
+    population: Population,
+    objective_function: Likelihood,
+) -> tuple[Population, float]:
+    """Select either the target or the trial vector for the next generation"""
+    target_lh = objective_function(target_vector)
+    trial_lh = objective_function(trial_vector)
+    improvement: float = 0.0
+
+    if abs(target_lh) < abs(trial_lh):
+        population[target_vector_id] = target_vector
+
+    if abs(target_lh) > abs(trial_lh):
+        population[target_vector_id] = trial_vector
+        improvement = abs(trial_lh - target_lh)
+
+    return population, improvement
+
 
 # run differential evolution
 def diver(
@@ -101,35 +156,23 @@ def diver(
             current_population = population_list[-1]
 
             # select a target vector
-            target_vector_id = random.randint(0, population_size - 1)
-            target_vector: list[float] = current_population[target_vector_id]
+            target_vector, target_vector_id = select_target_ramdom(current_population)
+            msg.log(f"target vector: {target_vector}", vl.debug)
 
             # mutation
-            donor_vector: Vector = mutation_simple(current_population, target_vector_id, mutation_scale_factor)
+            donor_vector = mutation_simple(current_population, target_vector_id, mutation_scale_factor)
+            msg.log(f"donor vector: {donor_vector}", vl.debug)
 
             # crossover
-            trial_vector: list[float] = []
-            for i, _ in enumerate(target_vector):
-                random_value = random.uniform(0, 1)
-                if random_value <= crossover_rate:
-                    trial_vector.append(donor_vector[i])
-                else:
-                    trial_vector.append(target_vector[i])
-
-            random_dimension = random.randint(0, len(ranges) - 1)
-            trial_vector[random_dimension] = donor_vector[random_dimension]
+            trial_vector = crossover(target_vector, donor_vector, crossover_rate)
+            msg.log(f"trial vector: {trial_vector}", vl.debug)
 
             # selection
-            target_lh = objective_function(target_vector)
-            trial_lh = objective_function(trial_vector)
+            current_population, improvement = selection(
+                target_vector, target_vector_id, trial_vector, current_population, objective_function
+            )
 
-            if abs(target_lh) < abs(trial_lh):
-                current_population[target_vector_id] = target_vector
-                improvement = 0
-
-            if abs(target_lh) > abs(trial_lh):
-                current_population[target_vector_id] = trial_vector
-                improvement = abs(trial_lh - target_lh)
+        # msg.log(f"Timer exceptions: {timer.}")
 
         new_population = current_population.copy()
         population_list.append(new_population)

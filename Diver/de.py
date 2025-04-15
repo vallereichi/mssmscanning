@@ -4,20 +4,90 @@ An optimizing algorithm with fast convergence and good stability for high dimens
 """
 
 from collections.abc import Callable
-import time
 import random
-import numpy as np
 import vallog as vl
-
 import objectives
+
 
 # type hinting
 type Vector = list[float]
 type Population = list[Vector]
 type Likelihood = Callable[[Vector], float]
+type Space = list[list[float]]
 
 # initialize logs
 msg = vl.Logger("Release")
+
+
+# create a Diver class
+class Diver:
+    """
+    Class containing the specific configuration and the option to run the differential evolution algorithm
+    """
+
+    def __init__(
+        self,
+        parameter_space: Space,
+        objective_function: Likelihood,
+        population_size: int | None = None,
+        conv_thresh: float | None = None,
+        max_iter: int | None = None,
+    ) -> None:
+        """initialise Diver"""
+        # initialise logging
+        self.msg = vl.Logger("Debug")
+
+        # set the configuration
+        self.parameter_space: Space = parameter_space
+        self.population_size: int = 10 * len(parameter_space) if population_size is None else population_size
+        self.conv_thresh: float = 1e-3 if conv_thresh is None else conv_thresh
+        self.max_iter: int = 1000 if max_iter is None else max_iter
+        self.objective_func: Likelihood = objective_function
+
+        # prepare the output and create the first generation
+        self.population_list: list[Population] = []
+        self.current_population: Population = self.initialise_population()
+        self.improvements: list[float] = []
+        self.update_times: list[float] = []
+
+    def __repr__(self) -> str:
+        """print out the configuration"""
+        self.msg.sep()
+        self.msg.heading("Diver configuration")
+        self.msg.log(f"Population size: {self.population_size}", vl.info)
+        self.msg.log(f"Objective function: {self.objective_func}", vl.info)
+        self.msg.log(f"Convergence threshold: {self.conv_thresh}", vl.info)
+        self.msg.log(f"Max Iterations: {self.max_iter}", vl.info)
+        return ""
+
+    def initialise_population(self) -> Population:
+        """create the first population with random points in the parameter space"""
+        print(self)
+        new_population = [
+            [
+                random.uniform(self.parameter_space[i][0], self.parameter_space[i][1])
+                for i in range(len(self.parameter_space))
+            ]
+            for _ in range(self.population_size)
+        ]
+        self.population_list.append(new_population)
+        return new_population
+
+    def get_best_vector(self, population: Population | None = None) -> tuple[Vector, int, float]:
+        """find the best vector in a population"""
+        population: Population = self.current_population if population is None else population
+        best_vector: Vector = population[0]
+        best_vector_id: int = 0
+        best_lh: float = 0.0
+
+        for i, point in enumerate(population):
+            lh: float = self.objective_func(point)
+            if abs(lh) < best_lh or best_lh == 0.0:
+                best_vector = point
+                best_vector_id = i
+                best_lh = lh
+
+        return best_vector, best_vector_id, best_lh
 
 
 # function declarations
@@ -195,15 +265,7 @@ def diver(
 
 
 if __name__ == "__main__":
-    """global constants"""
-    NP: int = 10
-    F: float = 0.5
-    Cr: float = 0.5
-    parameter_space: list[tuple[float]] = [(-50, 50), (-50, 50)]
-
+    par_space = [[0, 100], [0, 100]]
     objective = objectives.gaussian
-
-    convergence_threshold: float = 1e-5
-    MAX_ITERATIONS: int = 10000
-
-    populations, improvements, times = diver(NP, parameter_space, F, Cr, objective)
+    de = Diver(par_space, objective)
+    best_point = de.get_best_vector()

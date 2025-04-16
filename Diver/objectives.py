@@ -1,7 +1,9 @@
 """
 Objective functions
 """
+
 import numpy as np
+
 
 def gaussian(point: list[float], mu: float = 50, sigma: float = 30) -> float:
     """
@@ -11,18 +13,12 @@ def gaussian(point: list[float], mu: float = 50, sigma: float = 30) -> float:
     return np.sum([-0.5 * np.log(2 * np.pi * sigma**2) - (1 / (2 * sigma**2)) * (x - mu) ** 2 for x in point])
 
 
-
-
-
 def parabolic(point: list[float]) -> float:
     """
     test objective function
     """
 
     return point[0] ** 2 + point[1] ** 2
-
-
-
 
 
 def two_valleys(point: list[float]) -> float:

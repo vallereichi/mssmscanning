@@ -6,6 +6,7 @@ An optimizing algorithm with fast convergence and good stability for high dimens
 from collections.abc import Callable
 import inspect
 import random
+import copy
 import vallog as vl
 import objectives
 
@@ -33,10 +34,12 @@ class Diver:
         population_size: int | None = None,
         conv_thresh: float | None = None,
         max_iter: int | None = None,
+        debug: bool = False,
     ) -> None:
         """initialise Diver"""
         # initialise logging
-        self.msg = vl.Logger("Release")
+        self.debug = debug
+        self.msg = vl.Logger("Debug") if debug else vl.Logger("Release")
 
         # set the configuration
         self.parameter_space: Space = parameter_space
@@ -71,7 +74,7 @@ class Diver:
             ]
             for _ in range(self.population_size)
         ]
-        self.population_list.append(new_population)
+        self.population_list.append(copy.deepcopy(new_population))
         return new_population
 
     def get_best_vector(self, population: Population | None = None) -> tuple[Vector, int, float]:
@@ -141,6 +144,7 @@ class Diver:
         if abs(target_lh) > abs(trial_lh):
             self.current_population[target_vector_id] = trial_vector
             improvement = abs(trial_lh - target_lh)
+            self.msg.log(f"population changed: {target_vector} -> {trial_vector}", vl.debug)
 
         new_population = self.current_population.copy()
 
@@ -215,4 +219,5 @@ if __name__ == "__main__":
     par_space = [[0, 100], [0, 100]]
     objective = objectives.gaussian
     de = Diver(par_space, objective)
-    de.run()
+    populations, improvements, update_times = de.run()
+    de.msg.heading("Diver has hinished succesfully")

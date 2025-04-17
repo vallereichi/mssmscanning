@@ -105,7 +105,6 @@ def animate() -> None:
     bins_y = int(abs(ranges[1][1] - ranges[1][0]) / step_size)
 
     hist, xedges, yedges = np.histogram2d(points_x, points_y, bins=[bins_x, bins_y])
-    print(np.max(hist))
 
     cmap = hist_cmap()
     norm = mpl.colors.Normalize(vmin=1, vmax=np.max(hist))

@@ -10,7 +10,8 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 from matplotlib.animation import PillowWriter, FuncAnimation
 
 
-from de import diver, parabolic, two_valleys, four_valleys
+from de import Diver
+import objectives
 
 
 """
@@ -24,16 +25,17 @@ ranges = [(-50, 50)] * 2
 conv_thresh = 1e-5
 MAX_ITER = 10000
 
-obj_func = four_valleys
+obj_func = objectives.four_valleys
 
-animation_name = "four_valleys"
+animation_name = obj_func.__name__
 cont_levels = 10
 
 
 """
 create data
 """
-populations, improvements, update_times = diver(NP, ranges, F, Cr, obj_func, conv_thresh, MAX_ITER)
+diver = Diver(ranges, obj_func, NP, conv_thresh, MAX_ITER)
+populations, improvements, update_times = diver.run(crossover_rate=Cr, mutation_scale_factor=F)
 
 
 """custom colormap for histograms"""

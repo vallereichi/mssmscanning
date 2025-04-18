@@ -53,6 +53,9 @@ class Diver:
         self.current_population: Population = self.initialise_population()
         self.improvements: list[float] = []
         self.update_times: list[float] = []
+        self.select_target: Callable[[], tuple[Vector, int]] = self.select_target_random
+        self.mutation_scheme: Callable[[], Vector] = self.mutation_simple
+        self.mutation_signature: dict = []
 
     def __repr__(self) -> str:
         """print out the configuration"""
@@ -103,6 +106,12 @@ class Diver:
         """select the best vector from a population as the target vector"""
         best_vector, best_vector_id, _ = self.get_best_vector()
         return best_vector, best_vector_id
+
+    def select_target_index(self, index: int) -> tuple[Vector, int]:
+        """specify the index of the target vector"""
+        target_vector_id = index
+        target_vector = self.current_population[target_vector_id]
+        return target_vector, target_vector_id
 
     def mutation_simple(self, target_vector_id: int, mutation_scale_factor: float = 0.8) -> Vector:
         """create a donor vector from 3 randomly selected points of the population"""
@@ -176,7 +185,9 @@ class Diver:
         """start the algorithm"""
 
         select_target = self.select_target_random if select_target is None else select_target
+        self.select_target = select_target
         mutation_scheme = self.mutation_simple if mutation_scheme is None else mutation_scheme
+        self.mutation_scheme = mutation_scheme
 
         mutation_signature = inspect.signature(mutation_scheme)
         mutation_params = (
@@ -188,6 +199,7 @@ class Diver:
             if not kwargs
             else kwargs
         )
+        self.mutation_signature = mutation_signature
 
         self.msg.log(f"target: {select_target.__name__}", vl.info)
         self.msg.log(f"mutation scheme: {mutation_scheme.__name__} with {mutation_params}", vl.info)
@@ -220,4 +232,5 @@ if __name__ == "__main__":
     objective = objectives.gaussian
     de = Diver(par_space, objective)
     populations, improvements, update_times = de.run()
+    print(de.__dict__.keys())
     de.msg.heading("Diver has hinished succesfully")

@@ -5,7 +5,15 @@ Objective functions
 import numpy as np
 
 
-def gaussian(point: list[float], mu: float = 50, sigma: float = 30) -> float:
+type Vector = list[float]
+
+
+def de_jong(point: Vector) -> float:
+    """spheres summed"""
+    return np.sum([x**2 for x in point])
+
+
+def gaussian(point: Vector, mu: float = 50, sigma: float = 30) -> float:
     """
     negative log likelihood in the form of a gaussian shell
     """
@@ -13,7 +21,7 @@ def gaussian(point: list[float], mu: float = 50, sigma: float = 30) -> float:
     return np.sum([-0.5 * np.log(2 * np.pi * sigma**2) - (1 / (2 * sigma**2)) * (x - mu) ** 2 for x in point])
 
 
-def parabolic(point: list[float]) -> float:
+def parabolic(point: Vector) -> float:
     """
     test objective function
     """
@@ -21,7 +29,7 @@ def parabolic(point: list[float]) -> float:
     return point[0] ** 2 + point[1] ** 2
 
 
-def two_valleys(point: list[float]) -> float:
+def two_valleys(point: Vector) -> float:
     """
     test objective function
     """
@@ -33,7 +41,7 @@ def two_valleys(point: list[float]) -> float:
     return -valley1 - valley2 + 100
 
 
-def four_valleys(point: list[float]) -> float:
+def four_valleys(point: Vector) -> float:
     """
     test objective function
     """

@@ -35,11 +35,13 @@ class Diver:
         conv_thresh: float | None = None,
         max_iter: int | None = None,
         debug: bool = False,
+        cout: bool = True,
     ) -> None:
         """initialise Diver"""
         # initialise logging
         self.debug = debug
-        self.msg = vl.Logger("Debug") if debug else vl.Logger("Release")
+        self.cout = cout
+        self.msg = vl.Logger("Debug", cout=self.cout) if debug else vl.Logger("Release", cout=self.cout)
 
         # set the configuration
         self.parameter_space: Space = [[0, 100], [0, 100]] if parameter_space is None else parameter_space
@@ -70,7 +72,8 @@ class Diver:
 
     def initialise_population(self) -> Population:
         """create the first population with random points in the parameter space"""
-        print(self)
+        if self.cout:
+            print(self)
         new_population = [
             [
                 random.uniform(self.parameter_space[i][0], self.parameter_space[i][1])

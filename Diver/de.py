@@ -29,8 +29,8 @@ class Diver:
 
     def __init__(
         self,
-        parameter_space: Space,
-        objective_function: Likelihood,
+        parameter_space: Space | None = None,
+        objective_function: Likelihood | None = None,
         population_size: int | None = None,
         conv_thresh: float | None = None,
         max_iter: int | None = None,
@@ -42,11 +42,11 @@ class Diver:
         self.msg = vl.Logger("Debug") if debug else vl.Logger("Release")
 
         # set the configuration
-        self.parameter_space: Space = parameter_space
-        self.population_size: int = 10 * len(parameter_space) if population_size is None else population_size
+        self.parameter_space: Space = [[0, 100], [0, 100]] if parameter_space is None else parameter_space
+        self.population_size: int = 10 * len(self.parameter_space) if population_size is None else population_size
         self.conv_thresh: float = 1e-3 if conv_thresh is None else conv_thresh
         self.max_iter: int = 1000 if max_iter is None else max_iter
-        self.objective_func: Likelihood = objective_function
+        self.objective_func: Likelihood = objectives.gaussian if objective_function is None else objective_function
 
         # prepare the output and create the first generation
         self.population_list: list[Population] = []
@@ -56,6 +56,7 @@ class Diver:
         self.select_target: Callable[[], tuple[Vector, int]] = self.select_target_random
         self.mutation_scheme: Callable[[], Vector] = self.mutation_simple
         self.mutation_signature: dict = []
+        self.crossover_rate: float = 0.8
 
     def __repr__(self) -> str:
         """print out the configuration"""
@@ -113,16 +114,19 @@ class Diver:
         target_vector = self.current_population[target_vector_id]
         return target_vector, target_vector_id
 
-    def mutation_simple(self, target_vector_id: int, mutation_scale_factor: float = 0.8) -> Vector:
+    def mutation_simple(self, target_vector_id: int, mutation_scale_factor: float | None = None) -> Vector:
         """create a donor vector from 3 randomly selected points of the population"""
+        F = 0.8 if mutation_scale_factor is None else mutation_scale_factor
+
         population_cpy = self.current_population.copy()
         population_cpy.pop(target_vector_id)
         a, b, c = random.sample(population_cpy, 3)
-        donor_vector: Vector = [a[i] + mutation_scale_factor * (b[i] - c[i]) for i in range(len(a))]
+        donor_vector: Vector = [a[i] + F * (b[i] - c[i]) for i in range(len(a))]
         return donor_vector
 
     def crossover(self, target_vector: Vector, donor_vector: Vector, crossover_rate: float) -> Vector:
         """create the trial vector from the selected target and the donor vector"""
+        self.crossover_rate = crossover_rate
         trial_vector: list[float] = []
         for i, _ in enumerate(target_vector):
             random_value = random.uniform(0, 1)
@@ -177,13 +181,14 @@ class Diver:
 
     def run(
         self,
-        crossover_rate: float = 0.8,
+        crossover_rate: float | None = None,
         select_target: Callable[[], tuple[Vector, int]] | None = None,
         mutation_scheme: Callable[[], Vector] | None = None,
         **kwargs,
     ) -> tuple[list[Population], list[float], list[float]]:
         """start the algorithm"""
 
+        crossover_rate = self.crossover_rate if crossover_rate is None else crossover_rate
         select_target = self.select_target_random if select_target is None else select_target
         self.select_target = select_target
         mutation_scheme = self.mutation_simple if mutation_scheme is None else mutation_scheme

@@ -46,6 +46,7 @@ class Diver:
         # set the configuration
         self.parameter_space: Space = [[0, 100], [0, 100]] if parameter_space is None else parameter_space
         self.population_size: int = 10 * len(self.parameter_space) if population_size is None else population_size
+        self.dimensions: int = len(self.parameter_space)
         self.conv_thresh: float = 1e-3 if conv_thresh is None else conv_thresh
         self.max_iter: int = 1000 if max_iter is None else max_iter
         self.objective_func: Likelihood = objectives.gaussian if objective_function is None else objective_function
@@ -65,6 +66,7 @@ class Diver:
         self.msg.sep()
         self.msg.heading("Diver configuration")
         self.msg.log(f"Population size: {self.population_size}", vl.info)
+        self.msg.log(f"Parameter Space: {self.dimensions}-dimensional", vl.info)
         self.msg.log(f"Objective function: {self.objective_func.__name__}", vl.info)
         self.msg.log(f"Convergence threshold: {self.conv_thresh}", vl.info)
         self.msg.log(f"Max Iterations: {self.max_iter}", vl.info)

@@ -4,7 +4,6 @@ import itertools
 import numpy as np
 import vallog as vl
 from de import Diver
-import objectives
 
 msg = vl.Logger("Debug")
 
@@ -18,11 +17,11 @@ def calc_volume(parameter_space: list[list[int]]) -> int:
 
 
 # floor n-dimensional vectors
-diver = Diver(objective_function=objectives.four_valleys, population_size=1000, conv_thresh=1e-5)
+diver = Diver(population_size=1000, conv_thresh=1e-5)
 diver.run()
 point_list = list(itertools.chain(*diver.population_list))
 point_list_floored = np.floor(point_list)
-unique_points_floored = np.unique(point_list_floored, axis=0)
+unique_points_floored = np.unique(point_list_floored)
 
 
 # calculate coverage

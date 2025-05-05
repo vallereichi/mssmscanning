@@ -7,7 +7,6 @@ from collections.abc import Callable
 import inspect
 import random
 import copy
-import numpy as np
 import vallog as vl
 import objectives
 
@@ -163,7 +162,7 @@ class Diver:
         if abs(target_lh) > abs(trial_lh):
             self.current_population[target_vector_id] = trial_vector
             improvement = abs(trial_lh - target_lh)
-            self.msg.log(f"Improvement: {improvement}", vl.debug)
+            self.msg.log(f"population changed: {target_vector} -> {trial_vector}", vl.debug)
 
         new_population = self.current_population.copy()
 
@@ -220,7 +219,7 @@ class Diver:
                 new_population, improvement = self.update(crossover_rate, select_target, mutation_scheme, **kwargs)
 
             self.msg.log(
-                f"generation {len(self.population_list)}: took {timer.elapsed_time} seconds",
+                f"generation {len(self.population_list)}: took {timer.elapsed_time} seconds and improved by {improvement}",
                 vl.debug,
             )
 
@@ -228,10 +227,7 @@ class Diver:
             self.improvements.append(improvement)
             self.update_times.append(timer.elapsed_time)
 
-            n: int = len(self.population_list) if len(self.population_list) < 10 else 10
-            smoothed_improvement = 1 / n * np.sum(self.improvements[-n:])
-
-            if 0 < smoothed_improvement < self.conv_thresh:
+            if 0 < improvement < self.conv_thresh:
                 break
 
         self.msg.heading("Differential Evolution has finished with")
@@ -242,7 +238,9 @@ class Diver:
 
 
 if __name__ == "__main__":
-
-    de = Diver(debug=True)
+    par_space = [[0, 100], [0, 100]]
+    objective = objectives.gaussian
+    de = Diver(par_space, objective)
     populations, improvements, update_times = de.run()
+    print(de.__dict__.keys())
     de.msg.heading("Diver has hinished succesfully")

@@ -70,7 +70,7 @@ Printer:
     delete_file_on_restart: true
 
 Scanner:
-  use_scanner: de
+  use_scanner: random
   scanners:
     de:
       plugin: diver
@@ -84,6 +84,7 @@ Scanner:
       plugin: random
       like: LogLike
       point_number: 100
+      verbosity: 3
 
 ObsLikes:
   # Observables
@@ -91,9 +92,12 @@ ObsLikes:
     capability: MSSM_spectrum
     type: map_str_dbl
 
-    
+  # - purpose: Observable
+  #   capability: RD_oh2
 
-  # LogLikes  
+  # # LogLikes  
+  # - purpose: LogLike
+  #   capability: lnL_oh2
 
   
   
@@ -108,12 +112,47 @@ ObsLikes:
 Rules:
   - capability: unimproved_MSSM_spectrum
     type: Spectrum
-    function: get_MSSM_spectrum_SPheno                   
+    function: get_MSSM_spectrum_SPheno  
+    backends: 
+    - {backend: SPheno, version: 4.0.3}                 
     # function: get_MSSMatQ_spectrum_FS
     
   - capability: MSSM_spectrum
     type: Spectrum
     function: make_MSSM_precision_spectrum_none
+
+  # - capability: lnL_oh2
+  #   function: lnL_oh2_upperlimit
+
+  # - capability: RD_oh2
+  #   function: RD_oh2_MicrOmegas
+
+  # - capability: decay_rates
+  #   type: DecayTable
+  #   function: all_decays
+  #   module: DecayBit
+
+  # - capability: Reference_SM_Higgs_decay_rates
+  #   function: Ref_SM_Higgs_decays_table
+  # - capability: Reference_SM_other_Higgs_decay_rates
+  #   function: Ref_SM_other_Higgs_decays_table
+  # - capability: Reference_SM_A0_decay_rates
+  #   function: Ref_SM_A0_decays_table
+  # - capability: Higgs_decay_rates
+  #   function: MSSM_h0_1_decays
+  # - capability: h0_2_decay_rates
+  #   function: h0_2_decays
+  # - capability: A0_decay_rates
+  #   function: A0_decays
+  # - capability: H_plus_decay_rates
+  #   function: H_plus_decays
+  # - capability: t_decay_rates
+  #   function: t_decays
+
+  # - capability: RD_eff_annrate
+  #   function: RD_eff_annrate_from_ProcessCatalog
+
+  # - capability: TH_ProcessCatalog
 
 
 

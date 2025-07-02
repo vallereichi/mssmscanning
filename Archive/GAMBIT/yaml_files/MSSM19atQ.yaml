@@ -170,8 +170,6 @@ Logger:
     [Core]: "core.log"
     [Dependency Resolver]: "dep_res.log"
     [Printers]: "printer.log"
-    [PrecisionBit]: "prec_bit.log"
-    [SpecBit]: "spec_bit.log"
 
 KeyValues:
   dependency_resolution:

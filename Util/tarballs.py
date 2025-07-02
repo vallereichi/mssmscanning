@@ -1,21 +1,44 @@
+"""
+module for handling tarballs. This includes everything from creating tarballs to extracting compressed tar.gz files.
+"""
+
 import os
 import tarfile
 import argparse
 
 
-
 def create_tarball(source_dir: str, output_file: str) -> None:
+    """
+    Create a tarball from the specified source directory.
+    :param source_dir: The directory to compress.
+    :param output_file: The output tar.gz file path.
+    :return: None
+    """
     with tarfile.open(output_file, "w:gz") as tar:
         tar.add(source_dir, arcname=os.path.basename(source_dir))
 
-def compress_single_folder(dir_path: str, output_dir:str | None = None) -> None:
+
+def compress_single_folder(dir_path: str, output_dir: str | None = None) -> None:
+    """
+    compress one single folder into a compressed tarball.
+    :param dir_path: The path to the directory to compress.
+    :param output_dir: The directory where the tarball will be saved. Default is 'dir_path'.
+    :return: None
+    """
     output_dir = f"{dir_path}" if output_dir is None else output_dir
     base_name = os.path.basename(dir_path.rstrip(os.sep))
     output_file = os.path.join(output_dir, f"{base_name}.tar.gz")
     create_tarball(dir_path, output_file)
     print(f"compressed {output_file}")
 
+
 def compress_all_subfolders(parent_dir: str, output_dir: str | None = None) -> None:
+    """
+    compress all subfolders of a given parent directory into seperate tarballs.
+    :param parent_dir: The parent directory containing subfolders to compress.
+    :param output_dir: The directory where the tarballs will be saved. Default is 'compressed' in the parent directory.
+    :return: None
+    """
     output_dir = os.path.join(parent_dir, "compressed") if output_dir is None else output_dir
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -26,12 +49,19 @@ def compress_all_subfolders(parent_dir: str, output_dir: str | None = None) -> N
             create_tarball(source_dir, output_file)
             print(f"compressed {output_file}")
 
+
 def main():
+    """
+    Entry point
+    """
     parser = argparse.ArgumentParser(description="Compress one or multiple folders into a tarball")
     parser.add_argument("path", help="path to directory")
     parser.add_argument("--out", default=None, help="specify an output directory")
-    parser.add_argument("--all", action="store_true", help="if flag is set, all subfolders of the specified path will be compressed into seperate tarballs")
-
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="if flag is set, all subfolders of the specified path will be compressed into seperate tarballs",
+    )
 
     args = parser.parse_args()
 
@@ -42,6 +72,7 @@ def main():
         compress_all_subfolders(args.path, args.out)
     else:
         compress_single_folder(args.path, args.out)
+
 
 if __name__ == "__main__":
     main()

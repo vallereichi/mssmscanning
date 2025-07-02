@@ -127,8 +127,6 @@ Logger:
     [Core]: core.log
     [Dependency Resolver]: dep_res.log
     [Printers]: printer.log
-    [PrecisionBit]: prec_bit.log
-    [SpecBit]: spec_bit.log
   default_output_path: runs/MSSM19atQ//logs/
 KeyValues:
   dependency_resolution:

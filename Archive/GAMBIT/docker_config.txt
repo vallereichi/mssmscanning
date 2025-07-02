@@ -1,0 +1,10 @@
+gcc		11.4.0
+gfortran	11.4.0
+boost		
+python
+gsl
+lapack
+eigen
+pkg-config 0.29.2
+
+docker run -it --rm -v ./runs:/work/gambit/runs -v ./yaml_files:/yaml_files gambitbsm/gambit-pippi

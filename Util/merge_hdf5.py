@@ -27,7 +27,10 @@ def read_hdf5_file(file_path: str) -> dict:
     msg.heading(f"reading: {file_path}")
     with h5py.File(file_path, 'r') as file:
         dataset = file['MSSM']
-        data_dict = {key: np.array(dataset[key]) for key in dataset.keys()}
+        if isinstance(dataset, h5py.Group):
+            data_dict = {key: np.array(dataset[key]) for key in dataset.keys()}
+        else:
+            raise TypeError(f"expected type 'h5py.Group' but got {type(dataset)}")
     msg.log(f"read {len(data_dict)} keys from '{file_path}'", vl.info)
     return data_dict
 

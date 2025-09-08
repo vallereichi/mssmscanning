@@ -1,0 +1,7 @@
+GAMBIT;ModelGen
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0 Pole_Mass;SP_m_A
+;SP_m_H
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+ Pole_Mass;SP_m_Hp
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::W+ Pole_Mass;SP_m_W
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_1 Pole_Mass;SP_m_h
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g Pole_Mass;

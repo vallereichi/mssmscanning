@@ -1,6 +1,6 @@
 #!/bin/bash
 
-shoq_help() {
+show_help() {
 	echo "usage: $0 -s SOURCE -o OUTPUT"
 	echo
 	echo "Options:"

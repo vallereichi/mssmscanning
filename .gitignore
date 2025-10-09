@@ -13,3 +13,6 @@
 *.raw
 *.devo
 *.rparam
+# pixi environments
+.pixi/*
+!.pixi/config.toml

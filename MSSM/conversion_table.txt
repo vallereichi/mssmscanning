@@ -1,0 +1,7 @@
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_1 Pole_Mass;SP_m_chi_10
+
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_2 Pole_Mass;SP_m_chi_20
+#muon_gm2 @PrecisionBit::GM2C_SUSY::central;GM2_gmuon
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::M1 mass1;SP_M_1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_1 Pole_Mass;SP_m_h
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstop1;SP_m_t_1

@@ -1,0 +1,852 @@
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Ad_3
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Ad_3_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Au_3
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Au_3_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::M2
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::M2_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Qin
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Qin_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::SignMu
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::SignMu_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::TanBeta
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::TanBeta_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mHd2
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mHd2_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mHu2
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mHu2_isvalid
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mf2
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mf2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::A0_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::BMu mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::BMu mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+ Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+ Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::H+_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::M1 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::M1 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::M2 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::M2 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::M3 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::M3 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Mu mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Mu mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(1,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(1,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(1,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(1,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(1,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(1,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(2,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(2,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(2,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(2,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(2,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(2,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(3,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(3,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(3,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(3,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(3,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYd_(3,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(1,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(1,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(1,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(1,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(1,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(1,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(2,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(2,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(2,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(2,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(2,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(2,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(3,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(3,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(3,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(3,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(3,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYe_(3,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(1,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(1,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(1,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(1,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(1,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(1,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(2,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(2,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(2,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(2,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(2,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(2,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(3,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(3,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(3,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(3,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(3,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::TYu_(3,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::W+ Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::W+ Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Xb
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Xb_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Xt
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Xt_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(1,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(1,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(1,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(1,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(1,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(1,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(2,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(2,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(2,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(2,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(2,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(2,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(3,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(3,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(3,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(3,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(3,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yd_(3,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(1,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(1,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(1,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(1,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(1,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(1,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(2,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(2,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(2,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(2,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(2,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(2,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(3,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(3,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(3,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(3,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(3,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Ye_(3,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(1,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(1,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(1,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(1,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(1,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(1,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(2,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(2,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(2,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(2,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(2,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(2,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(3,1) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(3,1) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(3,2) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(3,2) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(3,3) dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Yu_(3,3) dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Z0 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::Z0 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(1,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(1,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(1,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(1,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(1,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(1,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(2,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(2,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(2,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(2,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(2,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(2,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(3,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(3,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(3,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(3,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(3,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ad_(3,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(1,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(1,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(1,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(1,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(1,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(1,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(2,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(2,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(2,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(2,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(2,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(2,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(3,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(3,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(3,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(3,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(3,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ae_(3,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::alpha dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::alpha dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::alphaS dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::alphaS dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(1,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(1,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(1,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(1,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(1,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(1,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(2,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(2,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(2,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(2,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(2,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(2,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(3,1) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(3,1) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(3,2) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(3,2) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(3,3) mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::au_(3,3) mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::b Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::b Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_1 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_1 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_2 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_2 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_3 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::d_3 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e- Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e- Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_1 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_1 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_2 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_2 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_3 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::e-_3 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g1 dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g1 dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g2 dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g2 dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g3 dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::g3 dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::gamma Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::gamma Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::gamma mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::gamma mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::h0_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mA2 mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mA2 mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mHd2 mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mHd2 mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mHu2 mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mHu2 mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(1,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(1,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(1,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(1,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(1,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(1,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(2,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(2,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(2,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(2,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(2,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(2,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(3,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(3,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(3,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(3,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(3,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::md2_(3,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(1,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(1,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(1,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(1,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(1,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(1,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(2,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(2,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(2,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(2,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(2,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(2,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(3,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(3,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(3,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(3,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(3,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::me2_(3,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(1,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(1,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(1,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(1,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(1,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(1,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(2,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(2,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(2,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(2,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(2,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(2,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(3,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(3,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(3,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(3,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(3,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::ml2_(3,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(1,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(1,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(1,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(1,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(1,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(1,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(2,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(2,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(2,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(2,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(2,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(2,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(3,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(3,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(3,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(3,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(3,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mq2_(3,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msbottom1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msbottom1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msbottom2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msbottom2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mscharmL
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mscharmL_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mscharmR
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mscharmR_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msdownL
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msdownL_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msdownR
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msdownR_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mselectronL
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mselectronL_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mselectronR
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mselectronR_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msmuonL
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msmuonL_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msmuonR
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msmuonR_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msnue
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msnue_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msnumu
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msnumu_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msnutau
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msnutau_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msstrangeL
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msstrangeL_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msstrangeR
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msstrangeR_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstau1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstau1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstau2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstau2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstop1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstop1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstop2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mstop2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msupL
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msupL_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msupR
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msupR_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu- Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu- Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(1,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(1,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(1,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(1,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(1,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(1,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(2,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(2,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(2,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(2,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(2,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(2,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(3,1) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(3,1) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(3,2) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(3,2) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(3,3) mass2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mu2_(3,3) mass2_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::nu_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::nu_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::nu_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::nu_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::nu_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::nu_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::scale(Q)
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::scale(Q)_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::sinW2 Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::sinW2 Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::sinW2 dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::sinW2 dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::t Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::t Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::tanbeta dimensionless
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::tanbeta dimensionless_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::tau- Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::tau- Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_1 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_1 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_2 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_2 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_3 mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::u_3 mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::vd mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::vd mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::vu mass1
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::vu mass1_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi+_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi-_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(1,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(2,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(3,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_(4,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_4 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~chi0_4 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(1,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(2,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(3,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(4,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(5,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_(6,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_4 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_4 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_5 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_5 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_6 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~d_6 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(1,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(2,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(3,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(4,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(5,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_(6,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_4 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_4 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_5 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_5 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_6 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~e-_6 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~g Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~g Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(1,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(1,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(2,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(2,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(3,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(3,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(3,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(3,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(3,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_(3,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~nu_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(1,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(2,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(3,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(4,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(5,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,1) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,1) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,2) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,2) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,3) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,3) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,4) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,4) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,5) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,5) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,6) Pole_Mixing
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_(6,6) Pole_Mixing_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_1 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_1 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_2 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_2 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_3 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_3 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_4 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_4 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_5 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_5 Pole_Mass_isvalid
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_6 Pole_Mass
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::~u_6 Pole_Mass_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_A
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_A_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_etabar
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_etabar_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_lambda
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_lambda_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_rhobar
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::CKM_rhobar_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::GF
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::GF_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alpha1
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alpha1_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alpha2
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alpha2_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alphaS
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alphaS_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alphainv
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::alphainv_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::delta13
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::delta13_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mBmB
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mBmB_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mCmC
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mCmC_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mD
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mD_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mE
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mE_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mMu
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mMu_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mNu1
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mNu1_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mNu2
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mNu2_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mNu3
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mNu3_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mS
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mS_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mT
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mT_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mTau
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mTau_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mU
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mU_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mZ
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::mZ_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::theta12
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::theta12_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::theta13
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::theta13_isvalid
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::theta23
+#StandardModel_SLHA2_parameters @StandardModel_SLHA2::primary_parameters::theta23_isvalid
+#lnL_gm2 @PrecisionBit::lnL_gm2
+#lnL_gm2 @PrecisionBit::lnL_gm2_isvalid
+#muon_gm2 @PrecisionBit::GM2C_SUSY::central
+#muon_gm2 @PrecisionBit::GM2C_SUSY::central_isvalid
+#muon_gm2 @PrecisionBit::GM2C_SUSY::lower
+#muon_gm2 @PrecisionBit::GM2C_SUSY::lower_isvalid
+#muon_gm2 @PrecisionBit::GM2C_SUSY::upper
+#muon_gm2 @PrecisionBit::GM2C_SUSY::upper_isvalid
+Invalidation Code
+Invalidation Code_isvalid
+LogLike
+LogLike_isvalid
+MPIrank
+MPIrank_isvalid
+ModifiedLogLike
+ModifiedLogLike_isvalid
+pointID
+pointID_isvalid
+scanID
+scanID_isvalid

@@ -110,7 +110,7 @@ def read_root_file(file_path: str, logfile) -> dict:
     return data_dict
 
 
-def merge_datasets(datasets: list[dict], logfile) -> dict:
+def merge_datasets(datasets: list[dict], logfile, file_type: str) -> dict:
     """
     merge multiple datasets into one dictionary
     """
@@ -127,7 +127,7 @@ def merge_datasets(datasets: list[dict], logfile) -> dict:
     for key in merged_data:
         merged_data[key] = np.concatenate(merged_data[key], axis=0)
     msg.log(f"merged {len(datasets)} datasets", vl.info)
-    scan_info(merged_data, "merged_dataset", "hdf5", logfile)
+    scan_info(merged_data, "merged_dataset", file_type, logfile)
     return merged_data
 
 
@@ -145,8 +145,15 @@ def save_dataset_to_hdf5(dataset: dict, output_path: str) -> None:
 
 def main(directory: str, output_filename: str, file_type: str):
     """Entry point"""
+    if not output_filename:
+        if "modelgen" in directory:
+            output_filename = "SP_MSSM7atQ_random_modelgen.hdf5"
+        elif "gambit" in directory:
+            output_filename = f"FS_MSSM7atQ_{directory.split('-')[0]}_{directory.split('-')[1]}_{directory.split('-')[2]}_gambit.hdf5"
+        else:
+            output_filename = "merged_dataset.hdf5"
     logfile_path = directory + "/merge.log"
-    logfile = open(logfile_path, 'w')
+    logfile = open(logfile_path, "w", encoding="utf-8")
     if file_type == "hdf5":
         hdf5_files = search_hdf5_files(directory, logfile)
         datasets = [read_hdf5_file(file, logfile) for file in hdf5_files]
@@ -156,7 +163,7 @@ def main(directory: str, output_filename: str, file_type: str):
     else:
         raise ValueError(f"FileType '{file_type}' is not supported")
 
-    merged_data = merge_datasets(datasets, logfile)
+    merged_data = merge_datasets(datasets, logfile, file_type=file_type)
     save_dataset_to_hdf5(merged_data, directory + "/" + output_filename)
     logfile.close()
 
@@ -164,9 +171,7 @@ def main(directory: str, output_filename: str, file_type: str):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", "--directory", type=str, default=".", help="directory to search for files")
-    parser.add_argument(
-        "-o", "--output", type=str, default="merged_dataset.hdf5", help="output path for the merged dataset"
-    )
+    parser.add_argument("-o", "--output", type=str, default="", help="output path for the merged dataset")
     parser.add_argument(
         "-f",
         "--file_type",

@@ -1,0 +1,42 @@
+prior: flat
+num_models: 1000
+isGMSB: False
+model: MSSM7atQ
+parameters:
+  tanb: [3, 70]
+  M_2: [-1000, 1000]
+  AT: [-1000, 1000]
+  Ab: [-1000, 1000]
+  mHu2: [-3000000, 1000]
+  mHd2: [-1000, 3000000]
+  sgnMu: [-1, 1]
+  mf2: [0, 100000]
+steps:
+  - name: prep_input
+    output_dir: input
+    prefix: IN
+  - name: SPheno
+    input_dir: input
+    output_dir: SPheno
+    log_dir: SPheno_log
+    prefix: SP
+  - name: softsusy
+    input_dir: input
+    output_dir: softsusy
+    prefix: SS
+  - name: micromegas
+    input_dir: SPheno
+    output_dir: micromegas
+    prefix: MO
+  - name: superiso
+    input_dir: SPheno
+    output_dir: superiso
+    prefix: SI
+  - name: gm2calc
+    input_dir: SPheno
+    output_dir: gm2calc
+    prefix: GM2
+  # - name: evade
+  #   input_dir: SPheno
+  #   output_dir: evade
+  #   prefix: EV

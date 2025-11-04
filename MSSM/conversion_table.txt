@@ -35,4 +35,13 @@
 #MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msupL;SP_m_u_L
 #MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::msupR;SP_m_u_R
 #MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::tanbeta dimensionless;SP_tanb_ext
-#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Au_3;SP_At
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mf2;IN_mbR
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Ad_3;IN_Ab
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::Au_3;IN_At
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::M2;IN_M_2
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::TanBeta;IN_tanb
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mHd2;IN_mHd2
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::mHu2;IN_mHu2
+#MSSM7atQ_parameters @MSSM7atQ::primary_parameters::SignMu;IN_sgnMu
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mHu2 mass2;SP_mHu2
+#MSSM_spectrum @SpecBit::get_MSSM_spectrum_as_map::mHd2 mass2;SP_mHd2
